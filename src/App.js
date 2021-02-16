@@ -1,19 +1,20 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { StyleIndex } from "./IndexComponent/styles";
+import React from "react";
 
-function App() {
+const App = () => {
   return (
     <StyleIndex className="App">
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <nav>
-          <a href="">Inicio</a>
-          <a href=""> Servicios</a>
-          <a href=""> Proyectos</a> <a href="#index">Quiénes Somos</a>
-          <a href=""> Contacto</a>
-        </nav>
-        <h1>DIEGO ARDILA</h1>
+        <div className="navbar">
+          <h1>DIEGO ARDILA</h1>
+          <nav>
+            <a href="">Inicio</a>
+            <a href=""> Servicios</a>
+            <a href=""> Proyectos</a> <a href="#index">Quiénes Somos</a>
+            <a href=""> Contacto</a>
+          </nav>
+        </div>
         <h2 id="index">Diseñador gráfico, UI/UX y desarrollador de software</h2>
       </header>
       <h1> SERVICIOS</h1> Creación de páginas web, desarrollo de software de
@@ -50,8 +51,12 @@ function App() {
         como los fabricantes y proveedores de referencia. Porque nuestro éxito
         se basa en la confianza que brindan los clientes.
       </p>
+      <footer>
+        CONTACTO Linkedin Facebook email alexander.diego.2007@hotmail.com
+        whatsappicon 304-256-7011 - 583-18-58
+      </footer>
     </StyleIndex>
   );
-}
+};
 
 export default App;
