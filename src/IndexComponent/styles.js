@@ -33,4 +33,21 @@ export const StyleIndex = styled.div`
       text-align: left;
     }
   }
+  .flexcolumns {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 55px;
+    & .column1 {
+      width: 70%;
+      & img {
+        width: 100%;
+      }
+    }
+    & .column2 {
+      width: 30%;
+      margin-left: 60px;
+    }
+  }
 `;
