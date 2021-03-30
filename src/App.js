@@ -1,6 +1,8 @@
 import { StyleIndex } from "./IndexComponent/styles";
 import React from "react";
 import image1 from "./assets/blog1.jpg";
+import "semantic-ui-css/semantic.min.css";
+import { Icon } from "semantic-ui-react";
 
 const App = () => {
   return (
@@ -20,10 +22,6 @@ const App = () => {
       <div className="flexcolumns">
         <div className="column1">
           <img src={image1}></img>
-          <h1> SERVICIOS</h1> Creación de páginas web, desarrollo de software de
-          todo tipo, desarrollo móvil, creación de diseños publicitarios.
-        </div>
-        <div className="column2">
           <h1>PROYECTOS</h1> <h2>Water Pacific</h2>
           <p>
             Abel Ángel Quiroz ha inventado un dispositivo llamado Water Pacific,
@@ -41,6 +39,8 @@ const App = () => {
             Desarrolla todo tu potencial inscribiéndote en nuestro Máster en
             Construcción y Explotación de Obras Hidráulicas.
           </p>
+        </div>
+        <div className="column2">
           <h1>QUIÉN SOY </h1>
           <p>
             Soy un desarrollador de software con enfoque en servicios y
@@ -58,11 +58,17 @@ const App = () => {
             y proveedores de referencia. Porque nuestro éxito se basa en la
             confianza que brindan los clientes.
           </p>
+          <h1> SERVICIOS</h1> Creación de páginas web, desarrollo de software de
+          todo tipo, desarrollo móvil, creación de diseños publicitarios.
         </div>
       </div>
       <footer>
-        CONTACTO Linkedin Facebook email alexander.diego.2007@hotmail.com
-        whatsappicon 304-256-7011 - 583-18-58
+        <h1>CONTACTO</h1>
+        <Icon className="linkedin"></Icon>
+        <Icon className="facebook f"></Icon>
+        <Icon className="envelope outline"></Icon>
+        alexander.diego.2007@hotmail.com <Icon className="whatsapp"></Icon>
+        304-256-7011 - 583-18-58
       </footer>
     </StyleIndex>
   );
