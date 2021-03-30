@@ -3,6 +3,7 @@ import React from "react";
 import image1 from "./assets/blog1.jpg";
 import "semantic-ui-css/semantic.min.css";
 import { Icon } from "semantic-ui-react";
+import { FooterComponent } from "./components/FooterComponent/Footer";
 
 const App = () => {
   return (
@@ -62,14 +63,7 @@ const App = () => {
           todo tipo, desarrollo móvil, creación de diseños publicitarios.
         </div>
       </div>
-      <footer>
-        <h1>CONTACTO</h1>
-        <Icon className="linkedin"></Icon>
-        <Icon className="facebook f"></Icon>
-        <Icon className="envelope outline"></Icon>
-        alexander.diego.2007@hotmail.com <Icon className="whatsapp"></Icon>
-        304-256-7011 - 583-18-58
-      </footer>
+      <FooterComponent></FooterComponent>
     </StyleIndex>
   );
 };

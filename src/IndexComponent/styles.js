@@ -50,7 +50,4 @@ export const StyleIndex = styled.div`
       margin-left: 60px;
     }
   }
-  footer {
-    background: #f7f7f7;
-  }
 `;
