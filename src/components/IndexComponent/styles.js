@@ -8,22 +8,29 @@ export const StyleIndex = styled.div`
   }
   .App-header {
     background-color: #000000;
-    min-height: 45vh;
+    min-height: 34vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-    padding: 0 44px;
+    padding: 0px 16%;
     & .navbar {
       display: flex;
       justify-content: space-between;
+      position: relative;
+      bottom: 89px;
+      & img {
+        width: 166px;
+        margin-top: 53px;
+      }
       & nav {
         width: 50%;
         text-align: right;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        font-size: 17px;
       }
       & h1 {
         margin: 0;
@@ -31,6 +38,7 @@ export const StyleIndex = styled.div`
     }
     h2 {
       text-align: left;
+      font-size: 22px;
     }
   }
   .flexcolumns {

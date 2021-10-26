@@ -1,16 +1,15 @@
-import { StyleIndex } from "./IndexComponent/styles";
+import { StyleIndex } from "./styles";
 import React from "react";
-import image1 from "./assets/blog1.jpg";
-import "semantic-ui-css/semantic.min.css";
+import image1 from "../../assets/blog1.jpg";
 import { Icon } from "semantic-ui-react";
-import { FooterComponent } from "./components/FooterComponent/Footer";
+import { FooterComponent } from "../FooterComponent/Footer";
 
 const App = () => {
   return (
     <StyleIndex className="App">
       <header className="App-header">
         <div className="navbar">
-          <h1>DIEGO ARDILA</h1>
+          <img src="https://angry-mcnulty-639e2f.netlify.app/img/da..png" />
           <nav>
             <a href="">Inicio</a>
             <a href=""> Servicios</a>
