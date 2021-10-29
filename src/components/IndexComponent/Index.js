@@ -1,24 +1,13 @@
 import { StyleIndex } from "./styles";
 import React from "react";
 import image1 from "../../assets/blog1.jpg";
-import { Icon } from "semantic-ui-react";
 import { FooterComponent } from "../FooterComponent/Footer";
+import { HeaderComponent } from "../HeaderComponent/Header";
 
 const App = () => {
   return (
     <StyleIndex className="App">
-      <header className="App-header">
-        <div className="navbar">
-          <img src="https://angry-mcnulty-639e2f.netlify.app/img/da..png" />
-          <nav>
-            <a href="">Inicio</a>
-            <a href=""> Servicios</a>
-            <a href=""> Proyectos</a> <a href="#index">Quiénes Somos</a>
-            <a href=""> Contacto</a>
-          </nav>
-        </div>
-        <h2 id="index">Diseñador gráfico, UI/UX y desarrollador de software</h2>
-      </header>
+      <HeaderComponent />
       <div className="flexcolumns">
         <div className="column1">
           <img src={image1}></img>
