@@ -10,7 +10,7 @@ export const HeaderComponent = () => {
           <nav>
             <a href="">Inicio</a>
             <a href=""> Servicios</a>
-            <a href=""> Proyectos</a> <a href="#index">Quiénes Somos</a>
+            <a href=""> Proyectos</a> <a href="#index">Quién Soy</a>
             <a href=""> Contacto</a>
           </nav>
         </div>

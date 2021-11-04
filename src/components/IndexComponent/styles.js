@@ -12,6 +12,7 @@ export const StyleIndex = styled.div`
     margin: 0 auto;
     text-align: left;
     margin-top: 55px;
+    margin-bottom: 98px;
     & .column1 {
       width: 70%;
       & img {

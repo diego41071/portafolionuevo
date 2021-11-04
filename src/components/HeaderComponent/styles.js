@@ -10,6 +10,7 @@ export const HeaderContainer = styled.div`
     padding: 0px 16%;
     & h1 {
       text-align: left;
+      padding-top: 101px;
     }
     & .title {
       margin-top: 57px;
