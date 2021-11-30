@@ -1,6 +1,5 @@
 import { StyleIndex } from "./styles";
 import React from "react";
-import image1 from "../../assets/blog1.jpg";
 import { FooterComponent } from "../FooterComponent/Footer";
 import { HeaderComponent } from "../HeaderComponent/Header";
 
@@ -10,7 +9,11 @@ const App = () => {
       <HeaderComponent />
       <div className="flexcolumns">
         <div className="column1">
-          <img src={image1}></img>
+          <img
+            src={
+              "https://disenowebakus.net/imagenes/servicios-web/diseno-de-paginas-web/diseno-web-para-empresas-mexico.jpg"
+            }
+          ></img>
           <h1>PROYECTOS</h1> <h2>Water Pacific</h2>
           <p>
             Abel Ángel Quiroz ha inventado un dispositivo llamado Water Pacific,

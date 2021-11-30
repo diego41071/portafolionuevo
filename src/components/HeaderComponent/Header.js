@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import { HeaderContainer } from "./styles";
 
 export const HeaderComponent = () => {
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset(window.pageYOffset);
+      console.log(offset);
+    };
+  });
+
   return (
     <HeaderContainer>
       <header className="App-header">
-        <div className="navbar">
+        <div className={`navbar ${offset > 220 && "delay"}`}>
           <img src="https://angry-mcnulty-639e2f.netlify.app/img/da..png" />
           <nav>
             <a href="">Inicio</a>
@@ -15,7 +24,7 @@ export const HeaderComponent = () => {
           </nav>
         </div>
         <div className="title">
-          <h1>DIEGO ARDILA</h1>
+          <h1>Diego Ardila</h1>
           <h2 id="index">
             Diseñador gráfico, UI/UX y desarrollador de software
           </h2>
