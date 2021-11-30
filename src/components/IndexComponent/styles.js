@@ -11,7 +11,7 @@ export const StyleIndex = styled.div`
     width: 70%;
     margin: 0 auto;
     text-align: left;
-    margin-top: 85 px;
+    margin-top: 85px;
     margin-bottom: 98px;
     & .column1 {
       width: 70%;
