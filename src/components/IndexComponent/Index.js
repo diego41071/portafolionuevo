@@ -2,6 +2,7 @@ import { StyleIndex } from "./styles";
 import React from "react";
 import { FooterComponent } from "../FooterComponent/Footer";
 import { HeaderComponent } from "../HeaderComponent/Header";
+import { Button } from "semantic-ui-react";
 
 const App = () => {
   return (
@@ -31,6 +32,13 @@ const App = () => {
             Desarrolla todo tu potencial inscribiéndote en nuestro Máster en
             Construcción y Explotación de Obras Hidráulicas.
           </p>
+          <Button
+            onClick={() => {
+              alert("hola");
+            }}
+          >
+            Ver todos los proyectos
+          </Button>
         </div>
         <div className="column2">
           <h1>QUIÉN SOY </h1>
