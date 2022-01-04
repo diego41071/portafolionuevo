@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import IndexComponent from "./components/IndexComponent/Index";
+import IndexComponent from "./pages/IndexComponent/Index";
 import reportWebVitals from "./reportWebVitals";
 import "semantic-ui-css/semantic.min.css";
 

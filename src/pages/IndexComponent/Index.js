@@ -1,10 +1,13 @@
 import { StyleIndex } from "./styles";
-import React from "react";
-import { FooterComponent } from "../FooterComponent/Footer";
-import { HeaderComponent } from "../HeaderComponent/Header";
+import React, { useState } from "react";
+import { FooterComponent } from "../../components/FooterComponent/Footer";
+import { HeaderComponent } from "../../components/HeaderComponent/Header";
 import { Button } from "semantic-ui-react";
+import { ModalHome } from "../../components/modals/modalHome";
 
 const App = () => {
+  const [modal, setModal] = useState(false);
+
   return (
     <StyleIndex className="App">
       <HeaderComponent />
@@ -34,11 +37,12 @@ const App = () => {
           </p>
           <Button
             onClick={() => {
-              alert("hola");
+              setModal(true);
             }}
           >
             Ver todos los proyectos
           </Button>
+          {modal && <ModalHome setModal={setModal} />}
         </div>
         <div className="column2">
           <h1>QUIÉN SOY </h1>
