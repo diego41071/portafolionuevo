@@ -9,7 +9,7 @@ const App = () => {
   const [modal, setModal] = useState(false);
 
   return (
-    <StyleIndex className="App">
+    <StyleIndex className="App" onClick={() => modal && setModal(false)}>
       <HeaderComponent />
       <div className="flexcolumns">
         <div className="column1">

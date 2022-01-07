@@ -1,9 +1,10 @@
 import React from "react";
 import { Button } from "semantic-ui-react";
+import { ModalIndex } from "./styles";
 
 export const ModalHome = (props) => {
   return (
-    <div>
+    <ModalIndex>
       modal
       <Button
         onClick={() => {
@@ -12,6 +13,6 @@ export const ModalHome = (props) => {
       >
         Cerrar
       </Button>
-    </div>
+    </ModalIndex>
   );
 };
