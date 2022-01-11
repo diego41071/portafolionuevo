@@ -7,4 +7,7 @@ export const ModalIndex = styled.div`
   background: white;
   border: 1px solid;
   margin: 0 auto;
+  width: 80%;
+  z-index: 502;
+  text-align: center;
 `;
