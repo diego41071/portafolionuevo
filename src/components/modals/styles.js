@@ -4,10 +4,20 @@ import styled from "styled-components";
 export const ModalIndex = styled.div`
   position: fixed;
   top: 286px;
-  background: white;
+  background-color: white;
   border: 1px solid;
   margin: 0 auto;
   width: 80%;
   z-index: 502;
   text-align: center;
+  animation: fadein 0.5s;
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
