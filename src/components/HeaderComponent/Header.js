@@ -7,7 +7,6 @@ export const HeaderComponent = () => {
   useEffect(() => {
     window.onscroll = () => {
       setOffset(window.pageYOffset);
-      console.log(offset);
     };
   });
 

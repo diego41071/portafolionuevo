@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "semantic-ui-react";
 import { ModalIndex } from "./styles";
 
 export const ModalHome = (props) => {
+  function fadeOutEffect() {
+    var fadeTarget = document.getElementById("hidemodal");
+    var fadeEffect = setInterval(function () {
+      if (!fadeTarget.style.opacity) {
+        fadeTarget.style.opacity = 1;
+      }
+      if (fadeTarget.style.opacity > 0) {
+        fadeTarget.style.opacity -= 0.1;
+        setTimeout(() => {
+          props.modal && props.setModal(false);
+        }, 300);
+      } else {
+        clearInterval(fadeEffect);
+      }
+    }, 15);
+  }
+
   return (
     <>
-      <ModalIndex>
-        <p> modal</p>
+      <ModalIndex id={"hidemodal"}>
+        <h1> Proyectos</h1>
         <Button
           onClick={() => {
-            props.setModal(false);
+            fadeOutEffect();
           }}
         >
           Cerrar
@@ -18,9 +35,9 @@ export const ModalHome = (props) => {
       {props.modal && (
         <div
           style={{
-            background: " rgba(0, 0, 0, 0.2)",
+            background: "rgba(0, 0, 0, 0.2)",
             width: "100%",
-            height: " 100%",
+            height: "100%",
             position: "fixed",
             display: "block",
             zIndex: 500,
@@ -28,7 +45,7 @@ export const ModalHome = (props) => {
             left: 0,
           }}
           onClick={() => {
-            props.modal && props.setModal(false);
+            fadeOutEffect();
           }}
         >
           .

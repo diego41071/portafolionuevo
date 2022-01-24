@@ -5,7 +5,6 @@ export const ModalIndex = styled.div`
   position: fixed;
   top: 286px;
   background-color: white;
-  border: 1px solid;
   margin: 0 auto;
   width: 80%;
   z-index: 502;
@@ -19,5 +18,9 @@ export const ModalIndex = styled.div`
     to {
       opacity: 1;
     }
+  }
+
+  .hidemodal {
+    animation: fadeout 0.5s;
   }
 `;

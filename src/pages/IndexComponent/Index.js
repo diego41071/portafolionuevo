@@ -62,8 +62,11 @@ const App = () => {
             y proveedores de referencia. Porque nuestro éxito se basa en la
             confianza que brindan los clientes.
           </p>
-          <h1> SERVICIOS</h1> Creación de páginas web, desarrollo de software de
-          todo tipo, desarrollo móvil, creación de diseños publicitarios.
+          <h1> SERVICIOS</h1>
+          <p>
+            Creación de páginas web, desarrollo de software de todo tipo,
+            desarrollo móvil, creación de diseños publicitarios.
+          </p>
         </div>
       </div>
       <FooterComponent></FooterComponent>
