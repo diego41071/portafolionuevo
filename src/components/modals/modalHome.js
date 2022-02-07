@@ -21,13 +21,13 @@ export const ModalHome = (props) => {
   }
 
   return (
-    <>
-      <ModalIndex id={"hidemodal"}>
-        <span onClick={() => alert("hola")}>x</span>
+    <ModalIndex id={"hidemodal"}>
+      <div className="modal">
+        <span onClick={() => fadeOutEffect()}>x</span>
         <h1> Proyectos</h1>
         <div>
           {[1, 2, 3, 4].map((item, index) => {
-            return <div key={index}>{item}</div>;
+            return <div key={index}>Proyecto {item}</div>;
           })}
         </div>
         <Button
@@ -36,20 +36,11 @@ export const ModalHome = (props) => {
           }}
         >
           Cerrar
-        </Button>{" "}
-      </ModalIndex>
+        </Button>
+      </div>
       {props.modal && (
         <div
-          style={{
-            background: "rgba(0, 0, 0, 0.2)",
-            width: "100%",
-            height: "100%",
-            position: "fixed",
-            display: "block",
-            zIndex: 500,
-            top: 0,
-            left: 0,
-          }}
+          className="shadow"
           onClick={() => {
             fadeOutEffect();
           }}
@@ -57,6 +48,6 @@ export const ModalHome = (props) => {
           .
         </div>
       )}
-    </>
+    </ModalIndex>
   );
 };
