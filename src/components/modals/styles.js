@@ -12,6 +12,9 @@ export const ModalIndex = styled.div`
     text-align: center;
     animation: fadein 0.5s;
     border-radius: 15px;
+    & .card {
+      border: 1px solid;
+    }
   }
   @keyframes fadein {
     from {

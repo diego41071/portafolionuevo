@@ -27,7 +27,12 @@ export const ModalHome = (props) => {
         <h1> Proyectos</h1>
         <div>
           {[1, 2, 3, 4].map((item, index) => {
-            return <div key={index}>Proyecto {item}</div>;
+            return (
+              <div className="card" key={index}>
+                Proyecto {item}
+                <p>descripcion</p>
+              </div>
+            );
           })}
         </div>
         <Button
