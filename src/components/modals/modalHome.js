@@ -25,7 +25,7 @@ export const ModalHome = (props) => {
       <div className="modal">
         <span onClick={() => fadeOutEffect()}>x</span>
         <h1> Proyectos</h1>
-        <div>
+        <div className="content-cards">
           {[1, 2, 3, 4].map((item, index) => {
             return (
               <div className="card" key={index}>

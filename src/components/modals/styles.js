@@ -8,12 +8,20 @@ export const ModalIndex = styled.div`
     background-color: white;
     margin: 0 auto;
     width: 80%;
+    padding: 44px;
     z-index: 502;
     text-align: center;
     animation: fadein 0.5s;
     border-radius: 15px;
-    & .card {
-      border: 1px solid;
+    & .content-cards {
+      display: flex;
+      justify-content: center;
+      & .card {
+        border: 1px solid;
+      }
+    }
+    & .button {
+      margin-top: 41px;
     }
   }
   @keyframes fadein {
