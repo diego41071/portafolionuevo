@@ -13,11 +13,19 @@ export const ModalIndex = styled.div`
     text-align: center;
     animation: fadein 0.5s;
     border-radius: 15px;
+    & h1 {
+      margin-bottom: 37px;
+    }
+    & .icon-close {
+      cursor: pointer;
+      float: right;
+    }
     & .content-cards {
       display: flex;
       justify-content: center;
       & .card {
         border: 1px solid;
+        margin-right: 40px;
       }
     }
     & .button {
