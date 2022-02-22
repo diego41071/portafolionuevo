@@ -30,7 +30,11 @@ export const ModalHome = (props) => {
         <div className="content-cards">
           {[1, 2, 3, 4].map((item, index) => {
             return (
-              <div className="card" key={index}>
+              <div
+                className="card"
+                key={index}
+                onClick={() => window.open("https://www.google.com", "_blank")}
+              >
                 Proyecto {item}
                 <p>descripcion</p>
               </div>

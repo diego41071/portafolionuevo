@@ -19,6 +19,8 @@ export const ModalIndex = styled.div`
     & .icon-close {
       cursor: pointer;
       float: right;
+      font-weight: bold;
+      font-size: 31px;
     }
     & .content-cards {
       display: flex;
@@ -26,6 +28,9 @@ export const ModalIndex = styled.div`
       & .card {
         border: 1px solid;
         margin-right: 40px;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 30px;
       }
     }
     & .button {
