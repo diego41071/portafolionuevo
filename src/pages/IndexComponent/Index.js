@@ -18,7 +18,7 @@ const App = () => {
               "https://disenowebakus.net/imagenes/servicios-web/diseno-de-paginas-web/diseno-web-para-empresas-mexico.jpg"
             }
           ></img>
-          <h1>PROYECTOS</h1> <h2>Water Pacific</h2>
+          <h1>Proyectos</h1> <h3>Water Pacific</h3>
           <p>
             Abel Ángel Quiroz ha inventado un dispositivo llamado Water Pacific,
             que recoge la humedad del aire y la transforma en agua apta para el
@@ -45,7 +45,7 @@ const App = () => {
           {modal && <ModalHome setModal={setModal} modal={modal} />}
         </div>
         <div className="column2">
-          <h1>QUIÉN SOY </h1>
+          <h1>Quién soy </h1>
           <p>
             Soy un desarrollador de software con enfoque en servicios y
             soluciones, con experiencia en el ámbito de las tecnologías de la
@@ -62,7 +62,7 @@ const App = () => {
             y proveedores de referencia. Porque nuestro éxito se basa en la
             confianza que brindan los clientes.
           </p>
-          <h1> SERVICIOS</h1>
+          <h1>Servicios</h1>
           <p>
             Creación de páginas web, desarrollo de software de todo tipo,
             desarrollo móvil, creación de diseños publicitarios.

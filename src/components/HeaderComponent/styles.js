@@ -47,6 +47,7 @@ export const HeaderContainer = styled.div`
         display: flex;
         justify-content: space-around;
         font-size: 17px;
+        align-items: center;
       }
       & h1 {
         margin: 0;

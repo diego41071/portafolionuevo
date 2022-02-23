@@ -18,6 +18,13 @@ export const StyleIndex = styled.div`
       & img {
         width: 100%;
       }
+      h3 {
+        margin-top: 0;
+        font-weight: 500;
+      }
+      .button {
+        margin-top: 8px;
+      }
     }
     & .column2 {
       width: 30%;
