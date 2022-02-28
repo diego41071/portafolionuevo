@@ -16,6 +16,10 @@ export const FooterContainer = styled.div`
     margin-right: 13px;
     margin-left: 19px;
   }
+  .facebook,
+  .linkedin {
+    cursor: pointer;
+  }
   .icon-social {
     margin-right: 0;
   }
