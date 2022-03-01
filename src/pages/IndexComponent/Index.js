@@ -39,6 +39,7 @@ const App = () => {
             onClick={() => {
               setModal(true);
             }}
+            secondary
           >
             Ver todos los proyectos
           </Button>
