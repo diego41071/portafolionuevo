@@ -21,6 +21,8 @@ export const HeaderComponent = () => {
             <a href=""> Proyectos</a> <a href="#index">Quién Soy</a>
             <a href=""> Contacto</a>
           </nav>
+          <div onClick={() => alert("hola")}> en</div>
+          <div onClick={() => alert("hola")}>es</div>
         </div>
         <div className="title">
           <h1>Diego Ardila</h1>
