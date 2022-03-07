@@ -3,6 +3,7 @@ import { HeaderContainer } from "./styles";
 
 export const HeaderComponent = () => {
   const [offset, setOffset] = useState(0);
+  const [lang, setLang] = useState("es");
 
   useEffect(() => {
     window.onscroll = () => {
@@ -21,13 +22,14 @@ export const HeaderComponent = () => {
             <a href=""> Proyectos</a> <a href="#index">Quién Soy</a>
             <a href=""> Contacto</a>
           </nav>
-          <div onClick={() => alert("hola")}> en</div>
-          <div onClick={() => alert("hola")}>es</div>
+          <div onClick={() => setLang("en")}> en</div>
+          <div onClick={() => setLang("es")}>es</div>
         </div>
         <div className="title">
           <h1>Diego Ardila</h1>
           <h2 id="index">
-            Diseñador gráfico, UI/UX y desarrollador de software
+            {lang === "es" ? "Diseñador" : "Designer"} gráfico, UI/UX y
+            desarrollador de software
           </h2>
         </div>
       </header>
