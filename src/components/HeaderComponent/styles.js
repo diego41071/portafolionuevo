@@ -52,12 +52,18 @@ export const HeaderContainer = styled.div`
       & h1 {
         margin: 0;
       }
+      & .contentlang {
+        & img {
+          margin-right: 20px;
+          cursor: pointer;
+        }
+      }
     }
     h2 {
       text-align: left;
       font-size: 22px;
       margin-top: 52px;
-      font-weight: lighter;
+      font-weight: bolder;
       color: lightgrey;
     }
   }

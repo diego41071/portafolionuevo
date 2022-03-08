@@ -22,8 +22,18 @@ export const HeaderComponent = () => {
             <a href=""> Proyectos</a> <a href="#index">Quién Soy</a>
             <a href=""> Contacto</a>
           </nav>
-          <div onClick={() => setLang("en")}> en</div>
-          <div onClick={() => setLang("es")}>es</div>
+          <div className="contentlang">
+            <img
+              src="https://s1.significados.com/foto/american-flag-1311743-180_sm.png"
+              onClick={() => setLang("en")}
+              title="English"
+            ></img>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png"
+              onClick={() => setLang("es")}
+              title="Español"
+            ></img>
+          </div>
         </div>
         <div className="title">
           <h1>Diego Ardila</h1>
