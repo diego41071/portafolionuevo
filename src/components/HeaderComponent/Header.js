@@ -3,7 +3,7 @@ import { HeaderContainer } from "./styles";
 
 export const HeaderComponent = () => {
   const [offset, setOffset] = useState(0);
-  const [lang, setLang] = useState("es");
+  const [lang, setLang] = useState("en");
 
   useEffect(() => {
     window.onscroll = () => {
@@ -17,10 +17,11 @@ export const HeaderComponent = () => {
         <div className={`navbar ${offset > 220 && "delay"}`}>
           <img src="https://angry-mcnulty-639e2f.netlify.app/img/da..png" />
           <nav>
-            <a href="">Inicio</a>
-            <a href=""> Servicios</a>
-            <a href=""> Proyectos</a> <a href="#index">Quién Soy</a>
-            <a href=""> Contacto</a>
+            <a href="">{lang === "es" ? "Inicio" : "Start"}</a>
+            <a href="">{lang === "es" ? "Servicios" : "Services"}</a>
+            <a href="">{lang === "es" ? "Proyectos" : "Projects"} </a>
+            <a href="#index">{lang === "es" ? "Quién Soy" : "Who I am"}</a>
+            <a href="">{lang === "es" ? "Contacto" : "Contact"} </a>
           </nav>
           <div className="contentlang">
             <img
@@ -38,8 +39,9 @@ export const HeaderComponent = () => {
         <div className="title">
           <h1>Diego Ardila</h1>
           <h2 id="index">
-            {lang === "es" ? "Diseñador" : "Designer"} gráfico, UI/UX y
-            desarrollador de software
+            {lang === "es"
+              ? "Diseñador gráfico, UI/UX y desarrollador de software"
+              : "Graphic designer, UI/UX and software developer"}
           </h2>
         </div>
       </header>
