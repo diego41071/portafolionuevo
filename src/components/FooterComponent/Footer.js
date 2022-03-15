@@ -29,7 +29,7 @@ export const FooterComponent = () => {
         <div className="flexicons">
           <Icon className="envelope outline"></Icon>
           alexander.diego.2007@hotmail.com <Icon className="whatsapp"></Icon>
-          304-256-7011 - 583-18-58
+          304-431-2140 - 583-18-58
         </div>
       </footer>
     </FooterContainer>

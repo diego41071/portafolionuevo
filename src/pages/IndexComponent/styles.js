@@ -31,4 +31,18 @@ export const StyleIndex = styled.div`
       margin-left: 60px;
     }
   }
+  @media screen and (max-width: 400px) {
+    & .flexcolumns {
+      display: block;
+    }
+
+    & .flexicons {
+      display: block !important;
+    }
+    & .column1,
+    .column2 {
+      width: 100% !important;
+      margin-left: auto !important;
+    }
+  }
 `;
