@@ -36,8 +36,11 @@ export const StyleIndex = styled.div`
       display: block;
     }
 
-    & .flexicons {
-      display: block !important;
+    & footer {
+      padding: 24px !important;
+      & .flexicons {
+        display: block !important;
+      }
     }
     & .column1,
     .column2 {
