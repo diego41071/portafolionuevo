@@ -21,6 +21,10 @@ export const HeaderContainer = styled.div`
       animation: imganim 0.7s alternate-reverse;
     }
 
+    & .hamburguer {
+      display: none;
+    }
+
     @keyframes imganim {
       from {
       }
@@ -65,6 +69,22 @@ export const HeaderContainer = styled.div`
       margin-top: 52px;
       font-weight: bolder;
       color: lightgrey;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .img-logo {
+      width: 62px !important;
+      height: 34px;
+    }
+    & nav {
+      display: none !important;
+    }
+
+    & .hamburguer {
+      display: block !important;
+      position: absolute !important;
+      top: 82px !important;
     }
   }
 `;

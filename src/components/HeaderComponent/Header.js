@@ -14,7 +14,12 @@ export const HeaderComponent = (props) => {
     <HeaderContainer>
       <header className="App-header">
         <div className={`navbar ${offset > 220 && "delay"}`}>
-          <img src="https://angry-mcnulty-639e2f.netlify.app/img/da..png" />
+          <div className="hamburguer"> icon menu</div>
+
+          <img
+            className="img-logo"
+            src="https://angry-mcnulty-639e2f.netlify.app/img/da..png"
+          />
           <nav>
             <a href="">{props.lang === "es" ? "Inicio" : "Start"}</a>
             <a href="">{props.lang === "es" ? "Servicios" : "Services"}</a>
