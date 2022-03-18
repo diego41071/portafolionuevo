@@ -77,14 +77,20 @@ export const HeaderContainer = styled.div`
       width: 62px !important;
       height: 34px;
     }
-    & nav {
-      display: none !important;
+    & .navbar {
+      img {
+        width: 58px !important;
+      }
+      & nav {
+        display: none !important;
+      }
     }
 
+    & .contentlang {
+      display: flex;
+    }
     & .hamburguer {
       display: block !important;
-      position: absolute !important;
-      top: 82px !important;
     }
   }
 `;
