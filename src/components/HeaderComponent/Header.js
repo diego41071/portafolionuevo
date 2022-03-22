@@ -1,4 +1,5 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
+import { Icon } from "semantic-ui-react";
 import { HeaderContainer } from "./styles";
 
 export const HeaderComponent = (props) => {
@@ -14,7 +15,9 @@ export const HeaderComponent = (props) => {
     <HeaderContainer>
       <header className="App-header">
         <div className={`navbar ${offset > 220 && "delay"}`}>
-          <div className="hamburguer"> icon menu</div>
+          <div className="hamburguer">
+            <Icon className="bars" onClick={(e) => alert("hola")}></Icon>
+          </div>
 
           <img
             className="img-logo"
@@ -39,6 +42,7 @@ export const HeaderComponent = (props) => {
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png"
               onClick={() => props.setLang("es")}
               title="Español"
+              className="img-esp"
             ></img>
           </div>
         </div>

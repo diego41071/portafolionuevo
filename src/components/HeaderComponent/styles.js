@@ -73,24 +73,31 @@ export const HeaderContainer = styled.div`
   }
 
   @media screen and (max-width: 400px) {
-    .img-logo {
-      width: 62px !important;
-      height: 34px;
-    }
     & .navbar {
-      img {
-        width: 58px !important;
+      align-items: center;
+      padding: 20px 5% !important;
+      & img {
+        width: 35px !important;
       }
       & nav {
         display: none !important;
+      }
+      & .img-logo {
+        width: 47px !important;
+        height: 25px;
+        margin-left: 25px;
       }
     }
 
     & .contentlang {
       display: flex;
+      & .img-esp {
+        margin-right: auto !important;
+      }
     }
     & .hamburguer {
       display: block !important;
+      font-size: 27px;
     }
   }
 `;
