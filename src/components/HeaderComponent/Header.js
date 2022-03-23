@@ -17,12 +17,12 @@ export const HeaderComponent = (props) => {
       <header className="App-header">
         <div className={`navbar ${offset > 220 && "delay"}`}>
           <div className="hamburguer">
-            <Icon
-              className="bars"
-              onClick={() => (menu ? setMenu(false) : setMenu(true))}
-            ></Icon>
+            {menu ? (
+              <div onClick={() => setMenu(false)}>x</div>
+            ) : (
+              <Icon className="bars" onClick={() => setMenu(true)}></Icon>
+            )}
           </div>
-          {menu && "hola"}
           <img
             className="img-logo"
             src="https://angry-mcnulty-639e2f.netlify.app/img/da..png"
@@ -50,6 +50,7 @@ export const HeaderComponent = (props) => {
             ></img>
           </div>
         </div>
+        {menu && <div className="menu-mobile">hola</div>}
         <div className="title">
           <h1>Diego Ardila</h1>
           <h2 id="index">

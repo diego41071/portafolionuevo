@@ -73,6 +73,12 @@ export const HeaderContainer = styled.div`
   }
 
   @media screen and (max-width: 400px) {
+    & .menu-mobile {
+      position: fixed;
+      background-color: #000000;
+      width: 100%;
+      left: 0;
+    }
     & .navbar {
       align-items: center;
       padding: 20px 5% !important;
