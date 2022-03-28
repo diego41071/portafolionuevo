@@ -18,7 +18,7 @@ export const HeaderComponent = (props) => {
         <div className={`navbar ${offset > 220 && "delay"}`}>
           <div className="hamburguer">
             {menu ? (
-              <div onClick={() => setMenu(false)}>x</div>
+              <Icon onClick={() => setMenu(false)} className="close" />
             ) : (
               <Icon className="bars" onClick={() => setMenu(true)}></Icon>
             )}
@@ -50,7 +50,12 @@ export const HeaderComponent = (props) => {
             ></img>
           </div>
         </div>
-        {menu && <div className="menu-mobile">hola</div>}
+        {menu && (
+          <div className="menu-mobile">
+            <div> Start</div> <div>Services</div> <div>Projects</div>
+            <div>Who I am</div> <div>Contact</div>
+          </div>
+        )}
         <div className="title">
           <h1>Diego Ardila</h1>
           <h2 id="index">
