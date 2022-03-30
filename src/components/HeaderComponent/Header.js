@@ -52,8 +52,8 @@ export const HeaderComponent = (props) => {
         </div>
         {menu && (
           <div className="menu-mobile">
-            <div> Start</div> <div>Services</div> <div>Projects</div>
-            <div>Who I am</div> <div>Contact</div>
+            <a> Start</a> <a>Services</a> <a>Projects</a>
+            <a>Who I am</a> <a>Contact</a>
           </div>
         )}
         <div className="title">
