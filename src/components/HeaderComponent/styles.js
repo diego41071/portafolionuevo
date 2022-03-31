@@ -81,6 +81,7 @@ export const HeaderContainer = styled.div`
       text-align: left;
       padding-left: 22px;
       padding-bottom: 28px;
+      padding-top: 21px;
     }
     & .navbar {
       align-items: center;

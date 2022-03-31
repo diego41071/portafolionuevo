@@ -52,8 +52,13 @@ export const HeaderComponent = (props) => {
         </div>
         {menu && (
           <div className="menu-mobile">
-            <a> Start</a> <a>Services</a> <a>Projects</a>
-            <a>Who I am</a> <a>Contact</a>
+            <a href="">{props.lang === "es" ? "Inicio" : "Start"}</a>
+            <a href="">{props.lang === "es" ? "Servicios" : "Services"}</a>
+            <a href="">{props.lang === "es" ? "Proyectos" : "Projects"} </a>
+            <a href="#index">
+              {props.lang === "es" ? "Quién Soy" : "Who I am"}
+            </a>
+            <a href="">{props.lang === "es" ? "Contacto" : "Contact"} </a>
           </div>
         )}
         <div className="title">
