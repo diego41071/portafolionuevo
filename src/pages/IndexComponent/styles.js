@@ -35,15 +35,11 @@ export const StyleIndex = styled.div`
     & .flexcolumns {
       display: block;
     }
-
-    & footer {
-      padding: 24px !important;
-      & .flexicons {
-        display: block !important;
-      }
-    }
     & .column1,
     .column2 {
+      & .button {
+        margin-bottom: 20px;
+      }
       width: 100% !important;
       margin-left: auto !important;
     }

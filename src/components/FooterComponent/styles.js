@@ -9,6 +9,9 @@ export const FooterContainer = styled.div`
       align-items: center;
       justify-content: center;
       margin-top: 40px;
+      & span {
+        margin-bottom: 10px;
+      }
     }
   }
   i {
@@ -22,5 +25,19 @@ export const FooterContainer = styled.div`
   }
   .icon-social {
     margin-right: 0;
+  }
+
+  @media screen and (max-width: 400px) {
+    & footer {
+      padding: 24px !important;
+      & .flexicons {
+        display: block !important;
+        line-height: 29px;
+        margin-top: 2px;
+        & .envelope {
+          margin-left: auto;
+        }
+      }
+    }
   }
 `;
