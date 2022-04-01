@@ -63,7 +63,7 @@ export const HeaderContainer = styled.div`
         }
       }
     }
-    h2 {
+    & h2 {
       text-align: left;
       font-size: 22px;
       margin-top: 52px;
@@ -73,41 +73,52 @@ export const HeaderContainer = styled.div`
   }
 
   @media screen and (max-width: 400px) {
-    & .menu-mobile {
-      position: fixed;
-      background-color: #000000;
-      width: 100%;
-      left: 0;
-      text-align: left;
-      padding-left: 22px;
-      padding-bottom: 28px;
-      padding-top: 21px;
-    }
-    & .navbar {
-      align-items: center;
-      padding: 20px 5% !important;
-      & img {
-        width: 35px !important;
+    & .App-header {
+      padding: 0px 16% 44px;
+      & .menu-mobile {
+        position: fixed;
+        background-color: #000000;
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding-left: 22px;
+        padding-bottom: 28px;
+        padding-top: 21px;
       }
-      & nav {
-        display: none !important;
+      & .navbar {
+        align-items: center;
+        padding: 20px 5% !important;
+        & img {
+          width: 35px !important;
+        }
+        & nav {
+          display: none !important;
+        }
+        & .img-logo {
+          width: 47px !important;
+          height: 25px;
+          margin-left: 25px;
+        }
       }
-      & .img-logo {
-        width: 47px !important;
-        height: 25px;
-        margin-left: 25px;
+      & .contentlang {
+        display: flex;
+        & .img-esp {
+          margin-right: auto !important;
+        }
       }
-    }
-
-    & .contentlang {
-      display: flex;
-      & .img-esp {
-        margin-right: auto !important;
+      & .hamburguer {
+        display: block !important;
+        font-size: 27px;
       }
-    }
-    & .hamburguer {
-      display: block !important;
-      font-size: 27px;
+      & .title {
+        & h2 {
+          font-size: 17px;
+          margin-top: auto;
+        }
+        & h1 {
+          padding-top: 46px;
+        }
+      }
     }
   }
 `;
