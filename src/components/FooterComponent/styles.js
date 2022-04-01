@@ -9,9 +9,6 @@ export const FooterContainer = styled.div`
       align-items: center;
       justify-content: center;
       margin-top: 40px;
-      & span {
-        margin-bottom: 10px;
-      }
     }
   }
   i {
