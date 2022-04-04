@@ -72,7 +72,7 @@ export const HeaderContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 720px) {
     & .App-header {
       padding: 0px 16% 44px;
       & .menu-mobile {

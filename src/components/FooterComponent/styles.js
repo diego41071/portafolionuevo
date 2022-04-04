@@ -24,7 +24,7 @@ export const FooterContainer = styled.div`
     margin-right: 0;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 720px) {
     & footer {
       padding: 24px !important;
       & .flexicons {

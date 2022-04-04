@@ -31,7 +31,7 @@ export const StyleIndex = styled.div`
       margin-left: 60px;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 720px) {
     & .flexcolumns {
       display: block;
     }
