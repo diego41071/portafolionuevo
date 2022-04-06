@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "semantic-ui-react";
+import { Button, Icon } from "semantic-ui-react";
 import { ModalIndex } from "./styles";
 
 export const ModalHome = (props) => {
@@ -23,9 +23,8 @@ export const ModalHome = (props) => {
   return (
     <ModalIndex id={"hidemodal"}>
       <div className="modal">
-        <span className="icon-close" onClick={() => fadeOutEffect()}>
-          x
-        </span>
+        <Icon className="close icon-close" onClick={() => fadeOutEffect()} />
+
         <h1> Proyectos</h1>
         <div className="content-cards">
           {[1, 2, 3, 4].map((item, index) => {

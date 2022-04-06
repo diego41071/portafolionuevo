@@ -60,4 +60,16 @@ export const ModalIndex = styled.div`
     top: 0;
     left: 0;
   }
+
+  @media screen and (max-width: 720px) {
+    .modal {
+      top: 90px;
+      height: 475px;
+      overflow-y: auto;
+
+      & .content-cards {
+        display: block !important;
+      }
+    }
+  }
 `;
