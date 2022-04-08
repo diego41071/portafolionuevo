@@ -34,7 +34,7 @@ export const ModalIndex = styled.div`
       }
     }
     & .button {
-      margin-top: 41px;
+      margin-top: 41px !important;
     }
   }
   @keyframes fadein {
@@ -64,11 +64,16 @@ export const ModalIndex = styled.div`
   @media screen and (max-width: 720px) {
     .modal {
       top: 90px;
-      height: 475px;
+      height: 364px;
       overflow-y: auto;
-
+      & h1 {
+        text-align: right;
+      }
       & .content-cards {
         display: block !important;
+        & .card {
+          margin-right: auto;
+        }
       }
     }
   }
