@@ -52,6 +52,7 @@ const App = () => {
           </p>
         </div>
       </div>
+      <div style={{ position: "fixed" }}>hola</div>
       <FooterComponent></FooterComponent>
     </StyleIndex>
   );
