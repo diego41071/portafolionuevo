@@ -1,17 +1,28 @@
 import { StyleIndex } from "./styles";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FooterComponent } from "../../components/FooterComponent/Footer";
 import { HeaderComponent } from "../../components/HeaderComponent/Header";
-import { Button } from "semantic-ui-react";
+import { Button, Icon } from "semantic-ui-react";
 import { ModalHome } from "../../components/modals/modalHome";
 
 const App = () => {
   const [modal, setModal] = useState(false);
   const [lang, setLang] = useState("en");
+  const [offset, setOffset] = useState(0);
 
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset(window.pageYOffset);
+    };
+  });
   return (
     <StyleIndex className="App">
-      <HeaderComponent lang={lang} setLang={setLang} />
+      <HeaderComponent
+        lang={lang}
+        setLang={setLang}
+        offset={offset}
+        setOffset={setOffset}
+      />
       <div className="flexcolumns">
         <div className="column1">
           <img
@@ -52,7 +63,11 @@ const App = () => {
           </p>
         </div>
       </div>
-      <div style={{ position: "fixed" }}>hola</div>
+      {offset > 220 && (
+        <div className="socialchat" onClick={(e) => window.scrollTo(0, 0)}>
+          <Icon className="arrow alternate circle up" />
+        </div>
+      )}
       <FooterComponent></FooterComponent>
     </StyleIndex>
   );

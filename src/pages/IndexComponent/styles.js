@@ -31,6 +31,16 @@ export const StyleIndex = styled.div`
       margin-left: 60px;
     }
   }
+  .socialchat {
+    position: fixed;
+    bottom: 2px;
+    width: 105px;
+    right: 0;
+    cursor: pointer;
+    & .icon {
+      font-size: 55px;
+    }
+  }
   @media screen and (max-width: 720px) {
     & .flexcolumns {
       display: block;

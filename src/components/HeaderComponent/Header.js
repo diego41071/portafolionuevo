@@ -3,19 +3,12 @@ import { Icon } from "semantic-ui-react";
 import { HeaderContainer } from "./styles";
 
 export const HeaderComponent = (props) => {
-  const [offset, setOffset] = useState(0);
   const [menu, setMenu] = useState(false);
-
-  useEffect(() => {
-    window.onscroll = () => {
-      setOffset(window.pageYOffset);
-    };
-  });
 
   return (
     <HeaderContainer>
       <header className="App-header">
-        <div className={`navbar ${offset > 220 && "delay"}`}>
+        <div className={`navbar ${props.offset > 220 && "delay"}`}>
           <div className="hamburguer">
             {menu ? (
               <Icon onClick={() => setMenu(false)} className="close" />
