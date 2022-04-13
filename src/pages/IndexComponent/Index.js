@@ -63,11 +63,15 @@ const App = () => {
           </p>
         </div>
       </div>
-      {offset > 220 && (
-        <div className="socialchat" onClick={(e) => window.scrollTo(0, 0)}>
-          <Icon className="arrow alternate circle up" />
-        </div>
-      )}
+      <div className="socialchat">
+        {offset > 220 && (
+          <Icon
+            className="arrow alternate circle up"
+            onClick={(e) => window.scrollTo(0, 0)}
+          />
+        )}
+        <Icon className="facebook messenger" /> <Icon className="whatsapp" />
+      </div>
       <FooterComponent></FooterComponent>
     </StyleIndex>
   );
