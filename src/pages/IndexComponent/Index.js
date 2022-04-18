@@ -70,7 +70,14 @@ const App = () => {
             onClick={(e) => window.scrollTo(0, 0)}
           />
         )}
-        <Icon className="facebook messenger" /> <Icon className="whatsapp" />
+        <Icon
+          className="facebook messenger"
+          onClick={() => window.open(" http://m.me/diegoardilasoluciones")}
+        />
+        <Icon
+          className="whatsapp"
+          onClick={() => window.open("https://wa.me/573044312140")}
+        />
       </div>
       <FooterComponent></FooterComponent>
     </StyleIndex>
