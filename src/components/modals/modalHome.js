@@ -25,7 +25,7 @@ export const ModalHome = (props) => {
       <div className="modal">
         <Icon className="close icon-close" onClick={() => fadeOutEffect()} />
 
-        <h1> Proyectos</h1>
+        <h1> {props.lang === "es" ? "Proyectos" : "Proyects"} </h1>
         <div className="content-cards">
           {[1, 2, 3, 4].map((item, index) => {
             return (
@@ -45,7 +45,7 @@ export const ModalHome = (props) => {
             fadeOutEffect();
           }}
         >
-          Cerrar
+          {props.lang === "es" ? "Cerrar" : "Close"}
         </Button>
       </div>
       {props.modal && (

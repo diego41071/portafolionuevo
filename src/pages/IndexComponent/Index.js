@@ -46,7 +46,14 @@ const App = () => {
           >
             {lang === "es" ? "Ver todos los proyectos" : "See all projects"}
           </Button>
-          {modal && <ModalHome setModal={setModal} modal={modal} />}
+          {modal && (
+            <ModalHome
+              setModal={setModal}
+              modal={modal}
+              lang={lang}
+              setLang={setLang}
+            />
+          )}
         </div>
         <div className="column2">
           <h1> {lang === "es" ? "Quién soy" : "Who I am"} </h1>
