@@ -27,15 +27,23 @@ export const ModalHome = (props) => {
 
         <h1> {props.lang === "es" ? "Proyectos" : "Proyects"} </h1>
         <div className="content-cards">
-          {[1, 2, 3, 4].map((item, index) => {
+          {[
+            {
+              title: "Water pacific",
+              description: "descripcion",
+            },
+            2,
+            3,
+            4,
+          ].map((item, index) => {
             return (
               <div
                 className="card"
                 key={index}
                 onClick={() => window.open("https://www.google.com", "_blank")}
               >
-                Proyecto {item}
-                <p>descripcion</p>
+                {item.title}
+                <p>{item.description}</p>
               </div>
             );
           })}
