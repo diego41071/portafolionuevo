@@ -32,9 +32,18 @@ export const ModalHome = (props) => {
               title: "Water pacific",
               description: "descripcion",
             },
-            2,
-            3,
-            4,
+            {
+              title: "Imepesaje",
+              description: "descripcion",
+            },
+            {
+              title: "",
+              description: "descripcion",
+            },
+            {
+              title: "",
+              description: "descripcion",
+            },
           ].map((item, index) => {
             return (
               <div
