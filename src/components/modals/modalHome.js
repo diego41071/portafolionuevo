@@ -57,13 +57,13 @@ export const ModalHome = (props) => {
             );
           })}
         </div>
-        <Button
+        {/* <Button
           onClick={() => {
             fadeOutEffect();
           }}
         >
           {props.lang === "es" ? "Cerrar" : "Close"}
-        </Button>
+        </Button> */}
       </div>
       {props.modal && (
         <div
