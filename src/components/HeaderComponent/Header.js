@@ -27,7 +27,9 @@ export const HeaderComponent = (props) => {
             <a href="#index">
               {props.lang === "es" ? "Quién Soy" : "Who I am"}
             </a>
-            <a href="">{props.lang === "es" ? "Contacto" : "Contact"} </a>
+            <a href="#footer">
+              {props.lang === "es" ? "Contacto" : "Contact"}{" "}
+            </a>
           </nav>
           <div className="contentlang">
             <img

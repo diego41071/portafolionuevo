@@ -5,7 +5,7 @@ import { FooterContainer } from "./styles";
 export const FooterComponent = () => {
   return (
     <FooterContainer>
-      <footer>
+      <footer id="footer">
         <div className="flexicons">
           <Icon
             onClick={() =>
