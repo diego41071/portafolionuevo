@@ -31,6 +31,9 @@ export const ModalHome = (props) => {
             {
               title: "Water pacific",
               description: "descripcion",
+              url: "https://angry-mcnulty-639e2f.netlify.app/waterpacificwebsite/",
+              image:
+                "https://angry-mcnulty-639e2f.netlify.app/waterpacificwebsite/img/pics/logotipo_water_pacific_1.png",
             },
             {
               title: "Imepesaje",
@@ -49,8 +52,9 @@ export const ModalHome = (props) => {
               <div
                 className="card"
                 key={index}
-                onClick={() => window.open("https://www.google.com", "_blank")}
+                onClick={() => window.open(item.url, "_blank")}
               >
+                <img src={item.image} />
                 {item.title}
                 <p>{item.description}</p>
               </div>
