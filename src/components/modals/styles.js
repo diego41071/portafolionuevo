@@ -8,7 +8,7 @@ export const ModalIndex = styled.div`
     background-color: white;
     margin: 0 auto;
     width: 80%;
-    padding: 44px 26px 90px;
+    padding: 44px 26px 90px 67px;
     z-index: 502;
     text-align: center;
     -webkit-animation: fadein 0.5s;

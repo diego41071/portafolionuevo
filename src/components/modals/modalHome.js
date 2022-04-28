@@ -31,13 +31,15 @@ export const ModalHome = (props) => {
             {
               title: "Water pacific",
               description: "descripcion",
-              url: "https://angry-mcnulty-639e2f.netlify.app/waterpacificwebsite/",
+              url: "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/",
               image:
-                "https://angry-mcnulty-639e2f.netlify.app/waterpacificwebsite/img/pics/logotipo_water_pacific_1.png",
+                "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/img/pics/logotipo_water_pacific_1.png",
             },
             {
               title: "Imepesaje",
               description: "descripcion",
+              url: "https://imepesaje.netlify.app/",
+              image: "https://imepesaje.netlify.app/images/logo.png",
             },
             {
               title: "",
