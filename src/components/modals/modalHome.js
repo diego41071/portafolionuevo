@@ -56,7 +56,7 @@ export const ModalHome = (props) => {
               >
                 <img src={item.image} />
                 {item.title}
-                <p>{item.description}</p>
+                {/* <p>{item.description}</p> */}
               </div>
             );
           })}

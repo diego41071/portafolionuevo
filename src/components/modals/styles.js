@@ -32,6 +32,7 @@ export const ModalIndex = styled.div`
         cursor: pointer;
         border-radius: 5px;
         padding: 30px;
+        width: 25%;
       }
     }
     & .button {
