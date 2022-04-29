@@ -41,14 +41,6 @@ export const ModalHome = (props) => {
               url: "https://imepesaje.netlify.app/",
               image: "https://imepesaje.netlify.app/images/logo.png",
             },
-            {
-              title: "",
-              description: "descripcion",
-            },
-            {
-              title: "",
-              description: "descripcion",
-            },
           ].map((item, index) => {
             return (
               <div

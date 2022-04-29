@@ -18,7 +18,7 @@ export const HeaderComponent = (props) => {
           </div>
           <img
             className="img-logo"
-            src="https://angry-mcnulty-639e2f.netlify.app/img/da..png"
+            src="https://diegoardilasoluciones.netlify.app/img/da..png"
           />
           <nav>
             <a href="">{props.lang === "es" ? "Inicio" : "Start"}</a>
