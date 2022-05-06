@@ -62,6 +62,10 @@ export const HeaderContainer = styled.div`
           cursor: pointer;
         }
       }
+      & .img-logo {
+        width: 76px;
+        height: 42px;
+      }
     }
     & h2 {
       text-align: left;

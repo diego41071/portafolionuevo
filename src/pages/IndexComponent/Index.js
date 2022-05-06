@@ -2,15 +2,17 @@ import { StyleIndex } from "./styles";
 import React, { useState, useEffect } from "react";
 import { FooterComponent } from "../../components/FooterComponent/Footer";
 import { HeaderComponent } from "../../components/HeaderComponent/Header";
-import { Button, Icon } from "semantic-ui-react";
+import { Button, Icon, Item } from "semantic-ui-react";
 import { ModalHome } from "../../components/modals/modalHome";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Carousel from "react-elastic-carousel";
 
 const App = () => {
   const [modal, setModal] = useState(false);
   const [lang, setLang] = useState("en");
   const [offset, setOffset] = useState(0);
+  const [slide, setSlide] = useState(1);
 
   useEffect(() => {
     AOS.init({
@@ -39,17 +41,35 @@ const App = () => {
             }
           ></img>
           <h1> {lang === "es" ? "Proyectos" : "Proyects"}</h1>
-          <div style={{ display: "flex" }}>
-            <div data-aos={"fade-left"}>
-              <h3>Water Pacific</h3>
-              <p>
-                {lang === "es"
-                  ? "Abel Ángel Quiroz ha inventado un dispositivo llamado Water Pacific, que recoge la humedad del aire y la transforma en agua apta para el consumo humano. El invento ha sido probado en el departamento colombiano de Antioquia, más concretamente en el Valle de Aburrá y, produce 35 litros de agua al día. Water Pacific Se trata de un ingenioso invento que puede suponer una buena solución para el desabastecimiento de agua en algunas zonas, ya que, la humedad relativa en el aire existe hasta en los lugares más áridos del planeta. Además este inventor también ha diseñado el Proyecto Hydroball, capacitado para producir un litro de agua extraída de la humedad del aire, con posibilidad de suministro de al menos diez plantas dentro de un cultivo. Tú también tienes una mente creativa. Desarrolla todo tu potencial inscribiéndote en nuestro Máster en Construcción y Explotación de Obras Hidráulicas."
-                  : "Abel Ángel Quiroz has invented a device called Water Pacific, which collects humidity from the air and transforms it into water suitable for human consumption. The invention has been tested in the Colombian department of Antioquia, more specifically in the Aburrá Valley, and produces 35 liters of water per day. Water Pacific This is an ingenious invention that can be a good solution for the shortage of water in some areas, since the relative humidity in the air exists even in the most arid places on the planet. In addition, this inventor has also designed the Hydroball Project, capable of producing a liter of water extracted from the humidity of the air, with the possibility of supplying at least ten plants within a crop. You also have a creative mind. Develop your full potential by enrolling in our Master's Degree in Construction and Exploitation of Hydraulic Works."}
-              </p>
-            </div>
-            flecha
+          <div className="flexproyects">
+            {slide === 1 ? (
+              <div data-aos={"fade-left"}>
+                <h3>Water Pacific</h3>
+                <p>
+                  {lang === "es"
+                    ? "Abel Ángel Quiroz ha inventado un dispositivo llamado Water Pacific, que recoge la humedad del aire y la transforma en agua apta para el consumo humano. El invento ha sido probado en el departamento colombiano de Antioquia, más concretamente en el Valle de Aburrá y, produce 35 litros de agua al día. Water Pacific Se trata de un ingenioso invento que puede suponer una buena solución para el desabastecimiento de agua en algunas zonas, ya que, la humedad relativa en el aire existe hasta en los lugares más áridos del planeta. Además este inventor también ha diseñado el Proyecto Hydroball, capacitado para producir un litro de agua extraída de la humedad del aire, con posibilidad de suministro de al menos diez plantas dentro de un cultivo. Tú también tienes una mente creativa. Desarrolla todo tu potencial inscribiéndote en nuestro Máster en Construcción y Explotación de Obras Hidráulicas."
+                    : "Abel Ángel Quiroz has invented a device called Water Pacific, which collects humidity from the air and transforms it into water suitable for human consumption. The invention has been tested in the Colombian department of Antioquia, more specifically in the Aburrá Valley, and produces 35 liters of water per day. Water Pacific This is an ingenious invention that can be a good solution for the shortage of water in some areas, since the relative humidity in the air exists even in the most arid places on the planet. In addition, this inventor has also designed the Hydroball Project, capable of producing a liter of water extracted from the humidity of the air, with the possibility of supplying at least ten plants within a crop. You also have a creative mind. Develop your full potential by enrolling in our Master's Degree in Construction and Exploitation of Hydraulic Works."}
+                </p>
+              </div>
+            ) : (
+              <div data-aos={"fade-left"}>
+                <h3>Imepesaje</h3>
+                <p>
+                  {lang === "es"
+                    ? "Abel Ángel Quiroz ha inventado un dispositivo llamado Water Pacific, que recoge la humedad del aire y la transforma en agua apta para el consumo humano. El invento ha sido probado en el departamento colombiano de Antioquia, más concretamente en el Valle de Aburrá y, produce 35 litros de agua al día. Water Pacific Se trata de un ingenioso invento que puede suponer una buena solución para el desabastecimiento de agua en algunas zonas, ya que, la humedad relativa en el aire existe hasta en los lugares más áridos del planeta. Además este inventor también ha diseñado el Proyecto Hydroball, capacitado para producir un litro de agua extraída de la humedad del aire, con posibilidad de suministro de al menos diez plantas dentro de un cultivo. Tú también tienes una mente creativa. Desarrolla todo tu potencial inscribiéndote en nuestro Máster en Construcción y Explotación de Obras Hidráulicas."
+                    : "Abel Ángel Quiroz has invented a device called Water Pacific, which collects humidity from the air and transforms it into water suitable for human consumption. The invention has been tested in the Colombian department of Antioquia, more specifically in the Aburrá Valley, and produces 35 liters of water per day. Water Pacific This is an ingenious invention that can be a good solution for the shortage of water in some areas, since the relative humidity in the air exists even in the most arid places on the planet. In addition, this inventor has also designed the Hydroball Project, capable of producing a liter of water extracted from the humidity of the air, with the possibility of supplying at least ten plants within a crop. You also have a creative mind. Develop your full potential by enrolling in our Master's Degree in Construction and Exploitation of Hydraulic Works."}
+                </p>
+              </div>
+            )}
           </div>
+          <Carousel itemsToShow={1}>
+            <Item>1</Item>
+            <Item>2</Item>
+            <Item>3</Item>
+            <Item>4</Item>
+            <Item>5</Item>
+            <Item>6</Item>
+          </Carousel>
           <Button
             onClick={() => {
               setModal(true);

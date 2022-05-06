@@ -25,6 +25,13 @@ export const StyleIndex = styled.div`
       .button {
         margin-top: 8px;
       }
+      & .flexproyects {
+        display: flex;
+        align-items: center;
+        & span {
+          cursor: pointer;
+        }
+      }
     }
     & .column2 {
       width: 30%;
