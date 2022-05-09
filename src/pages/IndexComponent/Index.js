@@ -12,7 +12,6 @@ const App = () => {
   const [modal, setModal] = useState(false);
   const [lang, setLang] = useState("en");
   const [offset, setOffset] = useState(0);
-  const [slide, setSlide] = useState(1);
 
   useEffect(() => {
     AOS.init({
