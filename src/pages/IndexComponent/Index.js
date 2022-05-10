@@ -40,7 +40,6 @@ const App = () => {
             }
           ></img>
           <h1> {lang === "es" ? "Proyectos" : "Proyects"}</h1>
-          <div className="flexproyects"></div>
           <Carousel itemsToShow={1}>
             <div data-aos={"fade-left"}>
               <h3>Water Pacific</h3>

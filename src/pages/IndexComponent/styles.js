@@ -23,6 +23,11 @@ export const StyleIndex = styled.div`
     box-shadow: 0 0 1px 3px black;
   }
 
+  .biosvY {
+    width: 111%;
+    margin-left: -49px;
+  }
+
   .cmVXWu {
     background-color: white;
     color: black;
