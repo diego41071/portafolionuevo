@@ -25,7 +25,7 @@ export const StyleIndex = styled.div`
 
   .biosvY {
     width: 111%;
-    margin-left: -49px;
+    margin-right: 20px;
   }
 
   .cmVXWu {
