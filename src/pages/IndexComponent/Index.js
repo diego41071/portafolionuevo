@@ -48,6 +48,8 @@ const App = () => {
                   lang === "es"
                     ? " El invento ha sido probado en el departamento colombiano de Antioquia, más concretamente en el Valle de Aburrá y, produce 35 litros de agua al día. Water Pacific Se trata de un ingenioso invento que puede suponer una buena solución para el desabastecimiento de agua en algunas zonas, ya que, la humedad relativa en el aire existe hasta en los lugares más áridos del planeta"
                     : "The invention has been tested in the Colombian department of Antioquia, more specifically in the Aburrá Valley, and produces 35 liters of water per day. Water Pacific This is an ingenious invention that can be a good solution for the shortage of water in some areas, since the relative humidity in the air exists even in the most arid places on the planet",
+                image:
+                  "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/img/pics/logotipo_water_pacific_1.png",
               },
               {
                 title: "Imepesaje",
@@ -55,12 +57,14 @@ const App = () => {
                   lang === "es"
                     ? "Esta página trata de un tipo de inventario y colección de insumos para la alta cocina e insumos industriales llamada Imepesaje y por medio de este se da a conocer todos sus productos"
                     : "This page deals with a type of inventory and collection of supplies for haute cuisine and industrial supplies called Imepesaje and through this all its products are disclosed",
+                image: "https://imepesaje.netlify.app/images/logo.png",
               },
             ].map((item, index) => {
               return (
                 <div data-aos={"fade-left"} key={index}>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
+                  <img src={item.image}></img>
                   <Button secondary onClick={() => alert("hola")}>
                     {lang === "es" ? "Visitar el sitio" : "Visit the site"}
                   </Button>
