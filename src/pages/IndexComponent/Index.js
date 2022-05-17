@@ -38,7 +38,7 @@ const App = () => {
             src={
               "https://disenowebakus.net/imagenes/servicios-web/diseno-de-paginas-web/diseno-web-para-empresas-mexico.jpg"
             }
-          ></img>
+          />
           <h1> {lang === "es" ? "Proyectos" : "Proyects"}</h1>
           <Carousel itemsToShow={1}>
             {[
@@ -64,7 +64,7 @@ const App = () => {
                 <div data-aos={"fade-left"} key={index}>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
-                  <img src={item.image}></img>
+                  <img className="img-proyects" src={item.image}></img>
                   <Button secondary onClick={() => alert("hola")}>
                     {lang === "es" ? "Visitar el sitio" : "Visit the site"}
                   </Button>

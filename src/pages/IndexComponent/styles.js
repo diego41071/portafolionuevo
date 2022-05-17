@@ -50,6 +50,11 @@ export const StyleIndex = styled.div`
       & img {
         width: 100%;
       }
+      & .img-proyects {
+        width: 323px;
+        display: block;
+        margin: 0 auto;
+      }
       h3 {
         margin-top: 0;
         font-weight: 500;
