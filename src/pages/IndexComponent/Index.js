@@ -2,7 +2,7 @@ import { StyleIndex } from "./styles";
 import React, { useState, useEffect } from "react";
 import { FooterComponent } from "../../components/FooterComponent/Footer";
 import { HeaderComponent } from "../../components/HeaderComponent/Header";
-import { Button, Icon, Item } from "semantic-ui-react";
+import { Button, Icon } from "semantic-ui-react";
 import { ModalHome } from "../../components/modals/modalHome";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,6 +12,7 @@ const App = () => {
   const [modal, setModal] = useState(false);
   const [lang, setLang] = useState("en");
   const [offset, setOffset] = useState(0);
+  const [visit, setVisit] = useState(false);
 
   useEffect(() => {
     AOS.init({
@@ -64,7 +65,13 @@ const App = () => {
                 <div data-aos={"fade-left"} key={index}>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
-                  <img className="img-proyects" src={item.image}></img>
+                  {visit && <Icon className="search" />}
+                  <img
+                    className="img-proyects"
+                    src={item.image}
+                    onMouseEnter={() => setVisit(true)}
+                    onMouseLeave={() => setVisit(false)}
+                  ></img>
                   <Button secondary onClick={() => alert("hola")}>
                     {lang === "es" ? "Visitar el sitio" : "Visit the site"}
                   </Button>
