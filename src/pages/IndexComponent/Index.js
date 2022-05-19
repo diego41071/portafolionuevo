@@ -65,16 +65,29 @@ const App = () => {
                 <div data-aos={"fade-left"} key={index}>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
-                  {visit && <Icon className="search" />}
+                  {visit && (
+                    <div
+                      style={{
+                        backgroundColor: "red",
+                        color: "white",
+                        opacity: 0.5,
+                        position: "absolute",
+                        width: "55px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <Icon className="search" />
+                    </div>
+                  )}
                   <img
+                    alt=""
                     className="img-proyects"
                     src={item.image}
                     onMouseEnter={() => setVisit(true)}
                     onMouseLeave={() => setVisit(false)}
-                  ></img>
-                  <Button secondary onClick={() => alert("hola")}>
-                    {lang === "es" ? "Visitar el sitio" : "Visit the site"}
-                  </Button>
+                  />
                 </div>
               );
             })}
