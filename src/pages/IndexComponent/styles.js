@@ -69,6 +69,18 @@ export const StyleIndex = styled.div`
           cursor: pointer;
         }
       }
+      & .visitItem {
+        background-color: red;
+        color: white;
+        opacity: 0.5;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 129px;
+        height: 206px;
+        width: 72%;
+      }
     }
     & .column2 {
       width: 30%;

@@ -67,16 +67,9 @@ const App = () => {
                   <p>{item.text}</p>
                   {visit && (
                     <div
-                      style={{
-                        backgroundColor: "red",
-                        color: "white",
-                        opacity: 0.5,
-                        position: "absolute",
-                        width: "55px",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
+                      className="visitItem"
+                      onMouseEnter={() => setVisit(true)}
+                      onMouseLeave={() => setVisit(false)}
                     >
                       <Icon className="search" />
                     </div>
