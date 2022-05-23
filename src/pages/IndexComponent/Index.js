@@ -67,11 +67,14 @@ const App = () => {
                   <p>{item.text}</p>
                   {visit && (
                     <div
-                      className="visitItem"
+                      className="visitItem delay"
                       onMouseEnter={() => setVisit(true)}
                       onMouseLeave={() => setVisit(false)}
                     >
-                      <Icon className="search" />
+                      <div>
+                        <Icon className="world" />
+                        <p> Visitar el sitio</p>
+                      </div>
                     </div>
                   )}
                   <img

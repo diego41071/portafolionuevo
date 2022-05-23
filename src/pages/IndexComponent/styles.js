@@ -70,16 +70,27 @@ export const StyleIndex = styled.div`
         }
       }
       & .visitItem {
-        background-color: red;
+        background-color: #0808089e;
         color: white;
-        opacity: 0.5;
         position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 129px;
+        left: 176px;
         height: 206px;
-        width: 72%;
+        width: 57%;
+        cursor: pointer;
+        & div {
+          text-align: center;
+          & i {
+            font-size: 45px;
+          }
+
+          & p {
+            font-size: 44px;
+            font-weight: bold;
+          }
+        }
       }
     }
     & .column2 {
@@ -87,6 +98,20 @@ export const StyleIndex = styled.div`
       margin-left: 60px;
     }
   }
+
+  & .delay {
+    transition: all 0.7s ease;
+    animation: imganim 0.7s alternate-reverse;
+  }
+
+  @keyframes imganim {
+    from {
+    }
+    to {
+      background-color: #999191;
+    }
+  }
+
   .socialchat {
     position: fixed;
     bottom: 2px;
