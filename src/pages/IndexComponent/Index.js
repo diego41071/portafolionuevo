@@ -51,6 +51,7 @@ const App = () => {
                     : "The invention has been tested in the Colombian department of Antioquia, more specifically in the Aburrá Valley, and produces 35 liters of water per day. Water Pacific This is an ingenious invention that can be a good solution for the shortage of water in some areas, since the relative humidity in the air exists even in the most arid places on the planet",
                 image:
                   "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/img/pics/logotipo_water_pacific_1.png",
+                url: "https://diegoardilasoluciones.netlify.app/waterpacificwebsite",
               },
               {
                 title: "Imepesaje",
@@ -59,6 +60,7 @@ const App = () => {
                     ? "Esta página trata de un tipo de inventario y colección de insumos para la alta cocina e insumos industriales llamada Imepesaje y por medio de este se da a conocer todos sus productos"
                     : "This page deals with a type of inventory and collection of supplies for haute cuisine and industrial supplies called Imepesaje and through this all its products are disclosed",
                 image: "https://imepesaje.netlify.app/images/logo.png",
+                url: "https://imepesaje.netlify.app",
               },
             ].map((item, index) => {
               return (
@@ -67,9 +69,11 @@ const App = () => {
                   <p>{item.text}</p>
                   {visit && (
                     <div
-                      className="visitItem delay"
+                      className="visitItem"
+                      data-aos={"zoom-in"}
                       onMouseEnter={() => setVisit(true)}
                       onMouseLeave={() => setVisit(false)}
+                      onClick={() => window.open(item.url)}
                     >
                       <div>
                         <Icon className="world" />
