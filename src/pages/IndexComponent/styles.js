@@ -22,7 +22,9 @@ export const StyleIndex = styled.div`
     background-color: black;
     box-shadow: 0 0 1px 3px black;
   }
-
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
   .biosvY {
     width: 111%;
     margin-right: 20px;
