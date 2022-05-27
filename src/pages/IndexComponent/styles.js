@@ -6,13 +6,12 @@ export const StyleIndex = styled.div`
     text-decoration: none;
     color: #fff;
   }
-  .jCPmTH {
-    background-color: black;
-    box-shadow: 0 0 1px 3px black;
-  }
 
+  button.rec-dot {
+    background-color: white;
+  }
   button.rec-dot:hover,
-  button.rec-dot:active,
+  button.rec-dot_active,
   button.rec-dot:focus {
     box-shadow: 0 0 1px 3px black;
     background-color: black;
@@ -22,24 +21,13 @@ export const StyleIndex = styled.div`
     background-color: black;
     box-shadow: 0 0 1px 3px black;
   }
+  .rec.rec-arrow {
+    background-color: white;
+  }
   .rec.rec-arrow:disabled {
     visibility: hidden;
   }
-  .biosvY {
-    width: 111%;
-    margin-right: 20px;
-  }
 
-  .cmVXWu {
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 2px 0px #333;
-  }
-  .cIQSxc {
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 2px 0px #333;
-  }
   .flexcolumns {
     display: flex;
     width: 70%;
