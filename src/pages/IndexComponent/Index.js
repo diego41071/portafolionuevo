@@ -77,7 +77,11 @@ const App = () => {
                     >
                       <div>
                         <Icon className="world" />
-                        <p> Visitar el sitio</p>
+                        <p>
+                          {lang === "es"
+                            ? "Visitar el sitio"
+                            : "Visit the site"}
+                        </p>
                       </div>
                     </div>
                   )}
