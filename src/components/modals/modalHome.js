@@ -3,6 +3,8 @@ import { Button, Icon } from "semantic-ui-react";
 import { ModalIndex } from "./styles";
 
 export const ModalHome = (props) => {
+  const [visit, setVisit] = useState(3);
+
   function fadeOutEffect() {
     var fadeTarget = document.getElementById("hidemodal");
     var fadeEffect = setInterval(function () {
@@ -30,14 +32,12 @@ export const ModalHome = (props) => {
           {[
             {
               title: "Water pacific",
-              description: "descripcion",
               url: "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/",
               image:
                 "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/img/pics/logotipo_water_pacific_1.png",
             },
             {
               title: "Imepesaje",
-              description: "descripcion",
               url: "https://imepesaje.netlify.app/",
               image: "https://imepesaje.netlify.app/images/logo.png",
             },
@@ -47,21 +47,23 @@ export const ModalHome = (props) => {
                 className="card"
                 key={index}
                 onClick={() => window.open(item.url, "_blank")}
+                onMouseEnter={() => setVisit(index)}
+                onMouseLeave={() => setVisit(3)}
               >
                 <img src={item.image} />
                 {item.title}
-                {/* <p>{item.description}</p> */}
+                {visit === index && (
+                  <span
+                    onMouseEnter={() => setVisit(index)}
+                    onMouseLeave={() => setVisit(index)}
+                  >
+                    "hola"
+                  </span>
+                )}
               </div>
             );
           })}
         </div>
-        {/* <Button
-          onClick={() => {
-            fadeOutEffect();
-          }}
-        >
-          {props.lang === "es" ? "Cerrar" : "Close"}
-        </Button> */}
       </div>
       {props.modal && (
         <div

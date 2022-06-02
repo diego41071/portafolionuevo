@@ -110,6 +110,7 @@ const App = () => {
               modal={modal}
               lang={lang}
               setLang={setLang}
+              setVisit={setVisit}
             />
           )}
         </div>
