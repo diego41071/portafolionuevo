@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Icon } from "semantic-ui-react";
+import { Icon } from "semantic-ui-react";
 import { ModalIndex } from "./styles";
 
 export const ModalHome = (props) => {
