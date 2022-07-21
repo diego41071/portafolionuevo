@@ -35,6 +35,31 @@ export const ModalIndex = styled.div`
         width: 25%;
       }
     }
+    & .visitItem_1 {
+      background-color: #0808089e;
+      color: white;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 386px;
+      height: 206px;
+      width: 24%;
+      cursor: pointer;
+      top: 142px;
+      cursor: pointer;
+      & div {
+        text-align: center;
+        & i {
+          font-size: 45px;
+        }
+
+        & p {
+          font-size: 44px;
+          font-weight: bold;
+        }
+      }
+    }
     & .button {
       margin-top: 41px !important;
     }
