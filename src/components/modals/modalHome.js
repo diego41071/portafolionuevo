@@ -52,29 +52,29 @@ export const ModalHome = (props) => {
               >
                 <img src={item.image} />
                 {item.title}
-                {/* {visit === index && ( */}
-                <div
-                  onMouseEnter={() => setVisit(index)}
-                  onMouseLeave={() => setVisit(index)}
-                >
+                {visit === index && (
                   <div
-                    className="visitItem_1"
-                    data-aos={"zoom-in"}
-                    onMouseEnter={() => setVisit(true)}
-                    onMouseLeave={() => setVisit(false)}
-                    onClick={() => window.open(item.url)}
+                    onMouseEnter={() => setVisit(index)}
+                    onMouseLeave={() => setVisit(index)}
                   >
-                    <div>
-                      <Icon className="world" />
-                      <p>
-                        {props.lang === "es"
-                          ? "Visitar el sitio"
-                          : "Visit the site"}
-                      </p>
+                    <div
+                      className="visitItem_1"
+                      data-aos={"zoom-in"}
+                      onMouseEnter={() => setVisit(index)}
+                      onMouseLeave={() => setVisit(index)}
+                      onClick={() => window.open(item.url)}
+                    >
+                      <div>
+                        <Icon className="world" />
+                        <p>
+                          {props.lang === "es"
+                            ? "Visitar el sitio"
+                            : "Visit the site"}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                {/* )} */}
+                )}
               </div>
             );
           })}
