@@ -43,8 +43,8 @@ export const ModalIndex = styled.div`
       align-items: center;
       justify-content: center;
       left: 386px;
-      height: 206px;
-      width: 24%;
+      height: 282px;
+      width: 355px;
       cursor: pointer;
       top: 142px;
       cursor: pointer;
