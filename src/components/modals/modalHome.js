@@ -52,32 +52,47 @@ export const ModalHome = (props) => {
               >
                 <img src={item.image} />
                 {item.title}
-                {visit === index && (
-                  <div
-                    onMouseEnter={() => setVisit(index)}
-                    onMouseLeave={() => setVisit(index)}
-                  >
-                    <div
-                      className="visitItem_1"
-                      data-aos={"zoom-in"}
-                      onMouseEnter={() => setVisit(index)}
-                      onMouseLeave={() => setVisit(index)}
-                      onClick={() => window.open(item.url)}
-                    >
-                      <div>
-                        <Icon className="world" />
-                        <p>
-                          {props.lang === "es"
-                            ? "Visitar el sitio"
-                            : "Visit the site"}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                )}
+
               </div>
             );
           })}
+          {visit === 0 && (
+            <div
+              className="visitItem_1"
+              data-aos={"zoom-in"}
+              onMouseEnter={() => setVisit(0)}
+              onMouseLeave={() => setVisit(3)}
+              onClick={() => window.open(visit === 0 && "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/")}
+            >
+              <div>
+                <Icon className="world" />
+                <p>
+                  {props.lang === "es"
+                    ? "Visitar el sitio"
+                    : "Visit the site"}
+                </p>
+              </div>
+            </div>
+          )}
+          {visit === 1 && (
+            "hola"
+            //   <div
+            //   className="visitItem_1"
+            //   data-aos={"zoom-in"}
+            //   onMouseEnter={() => setVisit(0)}
+            //   onMouseLeave={() => setVisit(3)}
+            //   onClick={() => window.open(visit === 0 && "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/")}
+            // >
+            //   <div>
+            //     <Icon className="world" />
+            //     <p>
+            //       {props.lang === "es"
+            //         ? "Visitar el sitio"
+            //         : "Visit the site"}
+            //     </p>
+            //   </div>
+            // </div>
+          )}
         </div>
       </div>
       {props.modal && (
