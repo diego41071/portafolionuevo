@@ -56,13 +56,13 @@ export const ModalHome = (props) => {
               </div>
             );
           })}
-          {visit === 0 && (
-            <div
-              className="visitItem_1"
+          {visit !== 3 &&
+            (< div
+              className={`visitItem_1 ${visit === 1 && "left_visit2"}`}
               data-aos={"zoom-in"}
-              onMouseEnter={() => setVisit(0)}
+              onMouseEnter={() => setVisit(visit)}
               onMouseLeave={() => setVisit(3)}
-              onClick={() => window.open(visit === 0 && "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/")}
+              onClick={() => window.open(visit === 1 ? "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/" : "https://imepesaje.netlify.app/")}
             >
               <div>
                 <Icon className="world" />
@@ -72,41 +72,21 @@ export const ModalHome = (props) => {
                     : "Visit the site"}
                 </p>
               </div>
-            </div>
-          )}
-          {visit === 1 && (
-            <div
-              className="visitItem_1"
-              data-aos={"zoom-in"}
-              onMouseEnter={() => setVisit(1)}
-              onMouseLeave={() => setVisit(3)}
-              onClick={() => window.open(visit === 1 && "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/")}
-              style={{
-                left: "782px"
-              }}
-            >
-              <div>
-                <Icon className="world" />
-                <p>
-                  {props.lang === "es"
-                    ? "Visitar el sitio"
-                    : "Visit the site"}
-                </p>
-              </div>
-            </div>
-          )}
+            </div>)}
         </div>
       </div>
-      {props.modal && (
-        <div
-          className="shadow"
-          onClick={() => {
-            fadeOutEffect();
-          }}
-        >
-          .
-        </div>
-      )}
-    </ModalIndex>
+      {
+        props.modal && (
+          <div
+            className="shadow"
+            onClick={() => {
+              fadeOutEffect();
+            }}
+          >
+            .
+          </div>
+        )
+      }
+    </ModalIndex >
   );
 };

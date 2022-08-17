@@ -35,6 +35,11 @@ export const ModalIndex = styled.div`
         width: 25%;
       }
     }
+
+    & .left_visit2{
+      left: 782px !important
+    }
+
     & .visitItem_1 {
       background-color: #0808089e;
       color: white;
