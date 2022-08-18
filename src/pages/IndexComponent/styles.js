@@ -113,13 +113,24 @@ export const StyleIndex = styled.div`
     }
   }
   @media screen and (max-width: 720px) {
+    & .rec-carousel{
+      width: 144%;
+    }
+    .width_visit_item{
+      width: 238px;
+    }
     & .flexcolumns {
       display: block;
     }
+    & .img-proyects {
+      width: 217px !important;
+    }
     & .column1,
     .column2 {
-      & .button {
-        margin-bottom: 20px;
+      & .button {        
+        margin-top: 20px !important;
+        display: block;
+        margin: 21px auto;
       }
       width: 100% !important;
       margin-left: auto !important;
