@@ -33,8 +33,12 @@ export const FooterContainer = styled.div`
         margin-top: 2px;
         & .envelope {
           margin-left: auto;
+          margin-right: 6px;
         }
       }
     }
+    &  i {
+      margin-left: 4px;
+  }
   }
 `;

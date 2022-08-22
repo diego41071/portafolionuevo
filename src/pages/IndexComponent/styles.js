@@ -135,5 +135,11 @@ export const StyleIndex = styled.div`
       width: 100% !important;
       margin-left: auto !important;
     }
+    .socialchat {
+    & .icon {
+      font-size: 42px;
+      margin-bottom: 5px;
+    }
+  }
   }
 `;
