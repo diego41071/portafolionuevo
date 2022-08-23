@@ -143,7 +143,7 @@ const App = () => {
         />
         <Icon
           className="whatsapp"
-          onClick={() => window.open("https://wa.me/573044312140")}
+          onClick={() => window.open("https://wa.me/573245765262")}
         />
       </div>
       <FooterComponent></FooterComponent>

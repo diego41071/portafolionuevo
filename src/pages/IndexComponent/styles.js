@@ -116,6 +116,16 @@ export const StyleIndex = styled.div`
     & .rec-carousel{
       width: 144%;
     }
+
+    & .rec.rec-arrow {
+      width: 49px;
+      height: 35px;
+      min-width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .width_visit_item{
       width: 238px;
     }

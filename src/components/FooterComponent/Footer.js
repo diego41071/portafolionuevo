@@ -30,7 +30,7 @@ export const FooterComponent = () => {
           <Icon className="envelope outline"></Icon>
           <span> alexander.diego.2007@hotmail.com</span>
           <Icon className="whatsapp"></Icon>
-          <span>304-431-2140</span>
+          <span>324 5765262</span>
         </div>
       </footer>
     </FooterContainer>
