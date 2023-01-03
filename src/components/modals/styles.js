@@ -14,18 +14,22 @@ export const ModalIndex = styled.div`
     -webkit-animation: fadein 0.5s;
     animation: fadein 0.5s;
     border-radius: 15px;
+
     & h1 {
       margin-bottom: 37px;
     }
+
     & .icon-close {
       cursor: pointer;
       float: right;
       font-weight: bold;
       font-size: 31px;
     }
+
     & .content-cards {
       display: flex;
       justify-content: center;
+
       & .card {
         border: 1px solid;
         margin-right: 40px;
@@ -36,8 +40,8 @@ export const ModalIndex = styled.div`
       }
     }
 
-    & .left_visit2{
-      left: 782px !important
+    & .left_visit2 {
+      left: 782px !important;
     }
 
     & .visitItem_1 {
@@ -53,8 +57,10 @@ export const ModalIndex = styled.div`
       cursor: pointer;
       top: 142px;
       cursor: pointer;
+
       & div {
         text-align: center;
+
         & i {
           font-size: 45px;
         }
@@ -65,14 +71,17 @@ export const ModalIndex = styled.div`
         }
       }
     }
+
     & .button {
       margin-top: 41px !important;
     }
   }
+
   @keyframes fadein {
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -98,13 +107,18 @@ export const ModalIndex = styled.div`
       top: 90px;
       height: 364px;
       overflow-y: auto;
+      padding: 46px;
       & h1 {
         text-align: right;
       }
+
       & .content-cards {
         display: block !important;
+
         & .card {
           margin-right: auto;
+          width: 100%;
+          margin-bottom: 34px;
         }
       }
     }
