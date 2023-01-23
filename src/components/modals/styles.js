@@ -107,11 +107,13 @@ export const ModalIndex = styled.div`
       top: 90px;
       height: 364px;
       overflow-y: auto;
-      padding: 46px;
+      padding: 46px 46px 7px;
+      left: 45px;
       & h1 {
-        text-align: right;
+        margin-bottom: 22px;
+        margin-top: 0px;
+        text-align: end;
       }
-
       & .content-cards {
         display: block !important;
 
@@ -120,6 +122,12 @@ export const ModalIndex = styled.div`
           width: 100%;
           margin-bottom: 34px;
         }
+      }
+
+      i {
+        left: 42px;
+        bottom: 20px;
+        position: relative;
       }
     }
   }
