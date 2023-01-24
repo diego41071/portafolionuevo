@@ -7,10 +7,10 @@ export const HeaderContainer = styled.div`
     flex-direction: column;
     font-size: calc(10px + 2vmin);
     color: white;
-    padding: 0px 16%;
+    padding: 0px 16% 45px;
     & h1 {
       text-align: left;
-      padding-top: 80px;
+      padding-top: 65px;
     }
     & .title {
       margin-top: 57px;
@@ -42,7 +42,7 @@ export const HeaderContainer = styled.div`
       width: 100%;
       top: 0;
       right: 0;
-      z-index:1;
+      z-index: 1;
       & img {
         width: 76px;
       }

@@ -1,10 +1,10 @@
-import React from "react";
 import styled from "styled-components";
 
 export const ModalIndex = styled.div`
   .modal {
     position: fixed;
-    top: 286px;
+    top: 15%;
+    left: 9%;
     background-color: white;
     margin: 0 auto;
     width: 80%;
@@ -14,7 +14,7 @@ export const ModalIndex = styled.div`
     -webkit-animation: fadein 0.5s;
     animation: fadein 0.5s;
     border-radius: 15px;
-
+    height: 75vh;
     & h1 {
       margin-bottom: 37px;
     }

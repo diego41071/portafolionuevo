@@ -48,6 +48,7 @@ export const StyleIndex = styled.div`
       h3 {
         margin-top: 0;
         font-weight: 500;
+        text-align: center;
       }
       .button {
         margin-top: 8px;
