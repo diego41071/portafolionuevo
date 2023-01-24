@@ -113,12 +113,12 @@ export const StyleIndex = styled.div`
     }
   }
   @media screen and (max-width: 720px) {
-    & .rec-carousel{
+    & .rec-carousel {
       width: 144%;
     }
 
     & .rec.rec-arrow {
-      width: 49px;
+      width: 44px;
       height: 35px;
       min-width: auto;
       display: flex;
@@ -126,7 +126,7 @@ export const StyleIndex = styled.div`
       justify-content: center;
     }
 
-    .width_visit_item{
+    .width_visit_item {
       width: 238px;
     }
     & .flexcolumns {
@@ -137,7 +137,7 @@ export const StyleIndex = styled.div`
     }
     & .column1,
     .column2 {
-      & .button {        
+      & .button {
         margin-top: 20px !important;
         display: block;
         margin: 21px auto;
@@ -146,10 +146,10 @@ export const StyleIndex = styled.div`
       margin-left: auto !important;
     }
     .socialchat {
-    & .icon {
-      font-size: 42px;
-      margin-bottom: 5px;
+      & .icon {
+        font-size: 42px;
+        margin-bottom: 5px;
+      }
     }
-  }
   }
 `;
