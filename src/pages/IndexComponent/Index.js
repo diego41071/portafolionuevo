@@ -64,7 +64,11 @@ const App = () => {
               },
             ].map((item, index) => {
               return (
-                <div data-aos={"fade-left"} key={index} className="width_visit_item">
+                <div
+                  data-aos={"fade-left"}
+                  key={index}
+                  className="width_visit_item"
+                >
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
                   {visit && (

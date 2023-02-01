@@ -67,9 +67,9 @@ export const StyleIndex = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 176px;
+        left: 12%;
         height: 206px;
-        width: 57%;
+        width: 28vw;
         cursor: pointer;
         & div {
           text-align: center;
