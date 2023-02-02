@@ -51,13 +51,12 @@ export const ModalIndex = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      left: 386px;
-      height: 282px;
-      width: 355px;
+      left: 25%;
+      height: 33vh;
+      width: 18vw;
       cursor: pointer;
       top: 142px;
       cursor: pointer;
-
       & div {
         text-align: center;
 
@@ -66,7 +65,7 @@ export const ModalIndex = styled.div`
         }
 
         & p {
-          font-size: 44px;
+          font-size: 25px;
           font-weight: bold;
         }
       }
