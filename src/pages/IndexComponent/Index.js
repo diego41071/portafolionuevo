@@ -40,7 +40,7 @@ const App = () => {
               "https://disenowebakus.net/imagenes/servicios-web/diseno-de-paginas-web/diseno-web-para-empresas-mexico.jpg"
             }
           />
-          <h1> {lang === "es" ? "Proyectos" : "Proyects"}</h1>
+          <h1 id="proyects"> {lang === "es" ? "Proyectos" : "Projects"}</h1>
           <Carousel itemsToShow={1}>
             {[
               {
@@ -119,13 +119,13 @@ const App = () => {
           )}
         </div>
         <div className="column2">
-          <h1> {lang === "es" ? "Quién soy" : "Who I am"} </h1>
+          <h1 id="who"> {lang === "es" ? "Quién soy" : "Who I am"} </h1>
           <p>
             {lang === "es"
               ? "Soy un desarrollador de software con enfoque en servicios y soluciones, con experiencia en el ámbito de las tecnologías de la información y las comunicaciones. Mi principal compromiso con los clientes es conseguir que las soluciones que ofrezco tengan un impacto positivo en su organización. Ofrezco servicios a la carta atendiendo a las necesidades de cada cliente y abarcando desde los servicios tradicionales hasta las soluciones más innovadoras. Como desarrollador informático, la mejor manera de satisfacer las necesidades del cliente es conocer sus peculiaridades y requisitos y así diseñar la mejor solución posible para cada caso en particular. Ofrecer servicios informáticos de calidad es nuestra meta, dispongo de los productos líderes de cada segmento, así como los fabricantes y proveedores de referencia. Porque nuestro éxito se basa en la confianza que brindan los clientes."
               : "I am a software developer with a focus on services and solutions, with experience in the field of information and communication technologies. My main commitment to clients is to ensure that the solutions I offer have a positive impact on their organization. I offer à la carte services meeting the needs of each client and ranging from traditional services to the most innovative solutions. As a computer developer, the best way to satisfy the client's needs is to know their peculiarities and requirements and thus design the best possible solution for each particular case. Offering quality computer services is our goal, I have the leading products in each segment, as well as the reference manufacturers and suppliers. Because our success is based on the trust that our customers provide."}
           </p>
-          <h1>{lang === "es" ? "Servicios" : "Services"}</h1>
+          <h1 id="services">{lang === "es" ? "Servicios" : "Services"}</h1>
           <p>
             {lang === "es"
               ? "Creación de páginas web, desarrollo de software de todo tipo, desarrollo móvil, creación de diseños publicitarios."
