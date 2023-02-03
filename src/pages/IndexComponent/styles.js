@@ -119,7 +119,7 @@ export const StyleIndex = styled.div`
     }
 
     & .visitItem {
-      display: none;
+      display: none !important;
     }
 
     & .rec.rec-arrow {
