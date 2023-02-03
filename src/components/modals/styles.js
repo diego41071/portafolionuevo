@@ -128,6 +128,10 @@ export const ModalIndex = styled.div`
         bottom: 20px;
         position: relative;
       }
+
+      .visitItem_1 {
+        display: none;
+      }
     }
   }
 `;

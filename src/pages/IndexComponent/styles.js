@@ -118,6 +118,10 @@ export const StyleIndex = styled.div`
       width: 144%;
     }
 
+    & .visitItem {
+      display: none;
+    }
+
     & .rec.rec-arrow {
       width: 44px;
       height: 35px;
