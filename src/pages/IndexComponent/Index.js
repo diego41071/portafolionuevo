@@ -95,6 +95,7 @@ const App = () => {
                     src={item.image}
                     onMouseEnter={() => setVisit(true)}
                     onMouseLeave={() => setVisit(false)}
+                    onClick={() => window.open(item.url, "_blank")}
                   />
                 </div>
               );
