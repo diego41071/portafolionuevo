@@ -27,10 +27,14 @@ export const FooterComponent = () => {
           ></Icon>
         </div>
         <div className="flexicons">
-          <Icon className="envelope outline"></Icon>
-          <span> alexander.diego.2007@hotmail.com</span>
-          <Icon className="whatsapp"></Icon>
-          <span>324 5765262</span>
+          <div className="flex_footer">
+            <Icon className="envelope outline"></Icon>
+            <span> alexander.diego.2007@hotmail.com</span>
+          </div>
+          <div className="flex_footer">
+            <Icon className="whatsapp"></Icon>
+            <span>324 5765262</span>
+          </div>
         </div>
       </footer>
     </FooterContainer>

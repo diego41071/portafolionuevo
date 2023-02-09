@@ -10,18 +10,25 @@ export const FooterContainer = styled.div`
       justify-content: center;
       margin-top: 40px;
     }
-  }
-  i {
-    font-size: 20px;
-    margin-right: 13px;
-    margin-left: 19px;
-  }
-  .facebook,
-  .linkedin {
-    cursor: pointer;
-  }
-  .icon-social {
-    margin-right: 0;
+
+    & i {
+      font-size: 20px;
+      margin-right: 13px;
+      margin-left: 19px;
+    }
+    & .facebook,
+    .linkedin {
+      cursor: pointer;
+    }
+    & .icon-social {
+      margin-right: 0;
+    }
+
+    & .flex_footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   @media screen and (max-width: 720px) {
@@ -32,13 +39,14 @@ export const FooterContainer = styled.div`
         line-height: 29px;
         margin-top: 2px;
         & .envelope {
-          margin-left: auto;
           margin-right: 6px;
         }
       }
     }
-    &  i {
+    & i {
       margin-left: 4px;
-  }
+      margin-bottom: 9px;
+      margin-right: 4px !important;
+    }
   }
 `;
