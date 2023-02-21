@@ -33,7 +33,7 @@ export const StyleIndex = styled.div`
     width: 70%;
     margin: 0 auto;
     text-align: left;
-    margin-top: 73px;
+    padding-top: 73px;
     margin-bottom: 98px;
     & .column1 {
       width: 70%;

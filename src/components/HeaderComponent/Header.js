@@ -1,19 +1,17 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useState } from "react";
 import { Icon } from "semantic-ui-react";
 import { HeaderContainer } from "./styles";
 
 export const HeaderComponent = (props) => {
-  const [menu, setMenu] = useState(false);
-
   return (
     <HeaderContainer>
       <header className="App-header">
         <div className={`navbar ${props.offset > 220 && "delay"}`}>
           <div className="hamburguer">
-            {menu ? (
-              <Icon onClick={() => setMenu(false)} className="close" />
+            {props.menu ? (
+              <Icon onClick={() => props.setMenu(false)} className="close" />
             ) : (
-              <Icon className="bars" onClick={() => setMenu(true)}></Icon>
+              <Icon className="bars" onClick={() => props.setMenu(true)}></Icon>
             )}
           </div>
           <img
@@ -47,7 +45,7 @@ export const HeaderComponent = (props) => {
             ></img>
           </div>
         </div>
-        {menu && (
+        {props.menu && (
           <div className="menu-mobile">
             <a href="#index">{props.lang === "es" ? "Inicio" : "Start"}</a>
             <a href="#services">
