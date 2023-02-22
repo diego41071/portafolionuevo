@@ -156,5 +156,8 @@ export const StyleIndex = styled.div`
         margin-bottom: 5px;
       }
     }
+    h1 {
+      text-align: center;
+    }
   }
 `;
