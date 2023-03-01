@@ -41,7 +41,7 @@ export const ModalIndex = styled.div`
     }
 
     & .left_visit2 {
-      left: 782px !important;
+      left: 52% !important;
     }
 
     & .visitItem_1 {
