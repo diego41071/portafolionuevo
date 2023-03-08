@@ -141,7 +141,7 @@ const App = () => {
         <div className="socialchat">
           {offset > 220 && (
             <Icon
-              className="arrow alternate circle up"
+              className="arrow alternate circle up margin_arrow"
               onClick={(e) => window.scrollTo(0, 0)}
               data-aos="zoom-in"
             />

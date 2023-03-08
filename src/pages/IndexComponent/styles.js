@@ -112,6 +112,9 @@ export const StyleIndex = styled.div`
     & .icon {
       font-size: 55px;
     }
+    & .margin_arrow {
+      margin-bottom: 4px;
+    }
   }
   @media screen and (max-width: 720px) {
     & .rec-carousel {
