@@ -103,19 +103,6 @@ export const StyleIndex = styled.div`
     }
   }
 
-  .socialchat {
-    position: fixed;
-    bottom: 2px;
-    width: 105px;
-    right: 0;
-    cursor: pointer;
-    & .icon {
-      font-size: 55px;
-    }
-    & .margin_arrow {
-      margin-bottom: 4px;
-    }
-  }
   @media screen and (max-width: 720px) {
     & .rec-carousel {
       width: 144%;
@@ -153,12 +140,7 @@ export const StyleIndex = styled.div`
       width: 100% !important;
       margin-left: auto !important;
     }
-    .socialchat {
-      & .icon {
-        font-size: 42px;
-        margin-bottom: 5px;
-      }
-    }
+
     h1 {
       text-align: center;
     }

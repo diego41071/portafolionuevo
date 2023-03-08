@@ -7,6 +7,7 @@ import { ModalHome } from "../../components/modals/modalHome";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Carousel from "react-elastic-carousel";
+import { SocialChatComponent } from "../../components/SocialChatComponent/SocialChat";
 
 const App = () => {
   const [modal, setModal] = useState(false);
@@ -138,23 +139,7 @@ const App = () => {
             </p>
           </div>
         </div>
-        <div className="socialchat">
-          {offset > 220 && (
-            <Icon
-              className="arrow alternate circle up margin_arrow"
-              onClick={(e) => window.scrollTo(0, 0)}
-              data-aos="zoom-in"
-            />
-          )}
-          <Icon
-            className="facebook messenger"
-            onClick={() => window.open(" http://m.me/diegoardilasoluciones")}
-          />
-          <Icon
-            className="whatsapp"
-            onClick={() => window.open("https://wa.me/573245765262")}
-          />
-        </div>
+        <SocialChatComponent offset={offset} />
       </div>
       <FooterComponent onClick={() => setMenu(false)}></FooterComponent>
     </StyleIndex>
