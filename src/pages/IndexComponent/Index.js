@@ -86,24 +86,24 @@ const App = () => {
                   >
                     <h3>{item.title}</h3>
                     <p>{item.text}</p>
-                    {/* {visit && ( */}
-                    <div
-                      className="visitItem"
-                      data-aos={"zoom-in"}
-                      onMouseEnter={() => setVisit(true)}
-                      onMouseLeave={() => setVisit(false)}
-                      onClick={() => window.open(item.url)}
-                    >
-                      <div>
-                        <Icon className="world" />
-                        <p>
-                          {lang === "es"
-                            ? "Visitar el sitio"
-                            : "Visit the site"}
-                        </p>
+                    {visit && (
+                      <div
+                        className="visitItem"
+                        data-aos={"zoom-in"}
+                        onMouseEnter={() => setVisit(true)}
+                        onMouseLeave={() => setVisit(false)}
+                        onClick={() => window.open(item.url)}
+                      >
+                        <div>
+                          <Icon className="world" />
+                          <p>
+                            {lang === "es"
+                              ? "Visitar el sitio"
+                              : "Visit the site"}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    {/* )} */}
+                    )}
                     <img
                       alt=""
                       className="img-proyects"
