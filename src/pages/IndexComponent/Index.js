@@ -67,6 +67,16 @@ const App = () => {
                   image: "https://imepesaje.netlify.app/images/logo.png",
                   url: "https://imepesaje.netlify.app",
                 },
+                {
+                  title: "Loyalty Advisors",
+                  text:
+                    lang === "es"
+                      ? "Loyalty Property Advisors tiene la misión de transformar el mercado inmobiliario colombiano al brindarle a cualquier persona acceso a oportunidades únicas de inversión inmobiliaria a través del compromiso directo y la transparencia total. Como profesionales del derecho, nos enfrentamos constantemente a la falta de apoyo a los compradores en los procesos de adquisición de inmuebles en Colombia. Con la economía en crecimiento del país, queremos asegurarnos de que los nuevos inversores accedan a un entorno de inversión seguro y acogedor acompañándolos en cada paso del viaje."
+                      : "Loyalty Property Advisors is on a mission to transform the Colombian real estate market by bringing anyone access to unique property investment opportunities through direct engagement and full transparency. As legal professionals, we were constantly confronted with the lack of support for buyers in the real estate acquisition processes in Colombia. With the country’s growing economy, we want to ensure that new investors come into a welcoming and secure investment environment by accompanying them at every step of the journey.",
+                  image:
+                    "https://elated-kare-3e7ef7.netlify.app/assets/images/LOYALTY%20SLIDER%203.png",
+                  url: "https://elated-kare-3e7ef7.netlify.app",
+                },
               ].map((item, index) => {
                 return (
                   <div
@@ -76,24 +86,24 @@ const App = () => {
                   >
                     <h3>{item.title}</h3>
                     <p>{item.text}</p>
-                    {visit && (
-                      <div
-                        className="visitItem"
-                        data-aos={"zoom-in"}
-                        onMouseEnter={() => setVisit(true)}
-                        onMouseLeave={() => setVisit(false)}
-                        onClick={() => window.open(item.url)}
-                      >
-                        <div>
-                          <Icon className="world" />
-                          <p>
-                            {lang === "es"
-                              ? "Visitar el sitio"
-                              : "Visit the site"}
-                          </p>
-                        </div>
+                    {/* {visit && ( */}
+                    <div
+                      className="visitItem"
+                      data-aos={"zoom-in"}
+                      onMouseEnter={() => setVisit(true)}
+                      onMouseLeave={() => setVisit(false)}
+                      onClick={() => window.open(item.url)}
+                    >
+                      <div>
+                        <Icon className="world" />
+                        <p>
+                          {lang === "es"
+                            ? "Visitar el sitio"
+                            : "Visit the site"}
+                        </p>
                       </div>
-                    )}
+                    </div>
+                    {/* )} */}
                     <img
                       alt=""
                       className="img-proyects"

@@ -17,7 +17,9 @@ export const StyleIndex = styled.div`
     background-color: black;
   }
   .rec.rec-arrow-left:hover:enabled,
-  .rec.rec-arrow-right:hover:enabled {
+  .rec.rec-arrow-right:hover:enabled,
+  .rec.rec-arrow-left:focus:enabled,
+  .rec.rec-arrow-right:focus:enabled {
     background-color: black;
     box-shadow: 0 0 1px 3px black;
   }
@@ -67,9 +69,9 @@ export const StyleIndex = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        left: 12%;
+        left: 15%;
         height: 206px;
-        width: 28vw;
+        width: 72%;
         cursor: pointer;
         & div {
           text-align: center;
