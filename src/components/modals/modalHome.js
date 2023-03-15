@@ -41,6 +41,12 @@ export const ModalHome = (props) => {
               url: "https://imepesaje.netlify.app/",
               image: "https://imepesaje.netlify.app/images/logo.png",
             },
+            {
+              title: "Loyalty Advisors",
+              url: "https://elated-kare-3e7ef7.netlify.app",
+              image:
+                "https://elated-kare-3e7ef7.netlify.app/assets/images/LOYALTY%20SLIDER%203.png",
+            },
           ].map((item, index) => {
             return (
               <div
