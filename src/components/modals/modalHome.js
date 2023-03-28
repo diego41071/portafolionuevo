@@ -58,31 +58,35 @@ export const ModalHome = (props) => {
               >
                 <img src={item.image} />
                 {item.title}
+                {visit === index && (
+                  <div
+                    className={`visitItem_1 ${
+                      visit === 1 ? "left_visit2" : visit === 2 && "left_visit3"
+                    }`}
+                    data-aos={"zoom-in"}
+                    onMouseEnter={() => setVisit(visit)}
+                    onMouseLeave={() => setVisit(3)}
+                    onClick={() =>
+                      window.open(
+                        visit === 1
+                          ? "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/"
+                          : "https://imepesaje.netlify.app/"
+                      )
+                    }
+                  >
+                    <div>
+                      <Icon className="world" />
+                      <p>
+                        {props.lang === "es"
+                          ? "Visitar el sitio"
+                          : "Visit the site"}
+                      </p>
+                    </div>
+                  </div>
+                )}
               </div>
             );
           })}
-          {visit !== 3 && (
-            <div
-              className={`visitItem_1 ${visit === 1 && "left_visit2"}`}
-              data-aos={"zoom-in"}
-              onMouseEnter={() => setVisit(visit)}
-              onMouseLeave={() => setVisit(3)}
-              onClick={() =>
-                window.open(
-                  visit === 1
-                    ? "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/"
-                    : "https://imepesaje.netlify.app/"
-                )
-              }
-            >
-              <div>
-                <Icon className="world" />
-                <p>
-                  {props.lang === "es" ? "Visitar el sitio" : "Visit the site"}
-                </p>
-              </div>
-            </div>
-          )}
         </div>
       </div>
       {props.modal && (
