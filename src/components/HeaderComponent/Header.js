@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Icon } from "semantic-ui-react";
 import { HeaderContainer } from "./styles";
+import logo from "../../assets/diego_ardila.png";
 
 export const HeaderComponent = (props) => {
   return (
@@ -14,10 +15,7 @@ export const HeaderComponent = (props) => {
               <Icon className="bars" onClick={() => props.setMenu(true)}></Icon>
             )}
           </div>
-          <img
-            className="img-logo"
-            src="https://diegoardilasoluciones.netlify.app/img/da..png"
-          />
+          <img className="img-logo" src={logo} />
           <nav>
             <a href="#index">{props.lang === "es" ? "Inicio" : "Start"}</a>
             <a href="#services">
