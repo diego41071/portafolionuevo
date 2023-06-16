@@ -64,8 +64,8 @@ export const HeaderContainer = styled.div`
         }
       }
       & .img-logo {
-        width: 76px;
-        height: 42px;
+        /* position: relative;
+        top: 9px; */
       }
     }
     & h2 {
