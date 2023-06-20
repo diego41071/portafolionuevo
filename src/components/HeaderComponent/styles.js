@@ -101,8 +101,8 @@ export const HeaderContainer = styled.div`
           display: none !important;
         }
         & .img-logo {
-          width: 47px !important;
-          height: 25px;
+          /* width: 47px !important;
+          height: 25px; */
           margin-left: 25px;
         }
       }
