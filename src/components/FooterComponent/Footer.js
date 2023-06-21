@@ -7,24 +7,28 @@ export const FooterComponent = () => {
     <FooterContainer>
       <footer id="footer">
         <div className="flexicons">
-          <Icon
-            onClick={() =>
-              window.open(
+          {[
+            {
+              onclick:
                 "https://www.linkedin.com/in/diego-alexander-ardila-rozo-491960229",
-                "_blank"
-              )
-            }
-            className="linkedin icon-social"
-          ></Icon>
-          <Icon
-            onClick={() =>
-              window.open(
-                "https://www.facebook.com/diegoardilasoluciones",
-                "_blank"
-              )
-            }
-            className="facebook f icon-social"
-          ></Icon>
+              class: "linkedin",
+            },
+            {
+              onclick: "https://www.facebook.com/diegoardilasoluciones",
+              class: "facebook f",
+            },
+            {
+              onclick: "https://www.instagram.com/alex.gram7",
+              class: "instagram",
+            },
+          ].map((item) => {
+            return (
+              <Icon
+                onClick={() => window.open(`${item.onclick}`, "_blank")}
+                className={`${item.class} icon-social`}
+              ></Icon>
+            );
+          })}
         </div>
         <div className="flexicons">
           <div className="flex_footer">

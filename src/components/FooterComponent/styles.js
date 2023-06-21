@@ -17,7 +17,8 @@ export const FooterContainer = styled.div`
       margin-left: 19px;
     }
     & .facebook,
-    .linkedin {
+    .linkedin,
+    .instagram {
       cursor: pointer;
     }
     & .icon-social {
