@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Icon } from "semantic-ui-react";
 import { HeaderContainer } from "./styles";
 import logo from "../../assets/diego_ardila.png";
+import flag1 from "../../assets/american-flag-1311743-180_sm.webp";
+import flag2 from "../../assets/Bandera_de_España.svg.png";
 
 export const HeaderComponent = (props) => {
   return (
@@ -31,12 +33,12 @@ export const HeaderComponent = (props) => {
           </nav>
           <div className="contentlang">
             <img
-              src="https://s1.significados.com/foto/american-flag-1311743-180_sm.png"
+              src={flag1}
               onClick={() => props.setLang("en")}
               title="English"
             ></img>
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png"
+              src={flag2}
               onClick={() => props.setLang("es")}
               title="Español"
               className="img-esp"
