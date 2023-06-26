@@ -8,6 +8,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Carousel from "react-elastic-carousel";
 import { SocialChatComponent } from "../../components/SocialChatComponent/SocialChat";
+import waterPacigicLogo from "../../assets/logotipo_water_pacific_1.png";
+import imepesajeLogo from "../../assets/logo.png";
+import loyaltyLogo from "../../assets/LOYALTY SLIDER 3.png";
 
 const App = () => {
   const [modal, setModal] = useState(false);
@@ -54,8 +57,7 @@ const App = () => {
                     lang === "es"
                       ? " El invento ha sido probado en el departamento colombiano de Antioquia, más concretamente en el Valle de Aburrá y, produce 35 litros de agua al día. Water Pacific Se trata de un ingenioso invento que puede suponer una buena solución para el desabastecimiento de agua en algunas zonas, ya que, la humedad relativa en el aire existe hasta en los lugares más áridos del planeta"
                       : "The invention has been tested in the Colombian department of Antioquia, more specifically in the Aburrá Valley, and produces 35 liters of water per day. Water Pacific This is an ingenious invention that can be a good solution for the shortage of water in some areas, since the relative humidity in the air exists even in the most arid places on the planet",
-                  image:
-                    "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/img/pics/logotipo_water_pacific_1.png",
+                  image: waterPacigicLogo,
                   url: "https://diegoardilasoluciones.netlify.app/waterpacificwebsite",
                 },
                 {
@@ -64,7 +66,7 @@ const App = () => {
                     lang === "es"
                       ? "Esta página trata de un tipo de inventario y colección de insumos para la alta cocina e insumos industriales llamada Imepesaje y por medio de este se da a conocer todos sus productos"
                       : "This page deals with a type of inventory and collection of supplies for haute cuisine and industrial supplies called Imepesaje and through this all its products are disclosed",
-                  image: "https://imepesaje.netlify.app/images/logo.png",
+                  image: imepesajeLogo,
                   url: "https://imepesaje.netlify.app",
                 },
                 {
@@ -73,8 +75,7 @@ const App = () => {
                     lang === "es"
                       ? "Loyalty Property Advisors tiene la misión de transformar el mercado inmobiliario colombiano al brindarle a cualquier persona acceso a oportunidades únicas de inversión inmobiliaria a través del compromiso directo y la transparencia total. Como profesionales del derecho, nos enfrentamos constantemente a la falta de apoyo a los compradores en los procesos de adquisición de inmuebles en Colombia. Con la economía en crecimiento del país, queremos asegurarnos de que los nuevos inversores accedan a un entorno de inversión seguro y acogedor acompañándolos en cada paso del viaje."
                       : "Loyalty Property Advisors is on a mission to transform the Colombian real estate market by bringing anyone access to unique property investment opportunities through direct engagement and full transparency. As legal professionals, we were constantly confronted with the lack of support for buyers in the real estate acquisition processes in Colombia. With the country’s growing economy, we want to ensure that new investors come into a welcoming and secure investment environment by accompanying them at every step of the journey.",
-                  image:
-                    "https://elated-kare-3e7ef7.netlify.app/assets/images/LOYALTY%20SLIDER%203.png",
+                  image: loyaltyLogo,
                   url: "https://elated-kare-3e7ef7.netlify.app",
                 },
               ].map((item, index) => {
