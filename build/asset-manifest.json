@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ee1336a7.css",
-    "main.js": "/static/js/main.656c3c1b.js",
+    "main.js": "/static/js/main.2ffb6628.js",
     "static/js/377.2bf5b29e.chunk.js": "/static/js/377.2bf5b29e.chunk.js",
     "static/media/LOYALTY SLIDER 3.png": "/static/media/LOYALTY SLIDER 3.fac93fb53137b9d6d447.png",
     "static/media/brand-icons.svg": "/static/media/brand-icons.6729d29753e000c17489.svg",
@@ -14,6 +14,7 @@
     "static/media/brand-icons.eot": "/static/media/brand-icons.d68fa3e67dbb653a13ce.eot",
     "static/media/logo.png": "/static/media/logo.e99f8504128df59dea7d.png",
     "static/media/brand-icons.ttf": "/static/media/brand-icons.65a2fb6d9aaa164b41a0.ttf",
+    "static/media/diseno-web-para-empresas-mexico.jpg": "/static/media/diseno-web-para-empresas-mexico.923ff08beb6c16c7a8a4.jpg",
     "static/media/Bandera_de_España.svg.png": "/static/media/Bandera_de_España.svg.6abbea183ccdae6a95e3.png",
     "static/media/brand-icons.woff": "/static/media/brand-icons.cac87dc00c87a5d74711.woff",
     "static/media/brand-icons.woff2": "/static/media/brand-icons.278156e41e0ad908cf7f.woff2",
@@ -27,11 +28,11 @@
     "static/media/american-flag-1311743-180_sm.webp": "/static/media/american-flag-1311743-180_sm.4ee7fa5d2995b4526921.webp",
     "index.html": "/index.html",
     "main.ee1336a7.css.map": "/static/css/main.ee1336a7.css.map",
-    "main.656c3c1b.js.map": "/static/js/main.656c3c1b.js.map",
+    "main.2ffb6628.js.map": "/static/js/main.2ffb6628.js.map",
     "377.2bf5b29e.chunk.js.map": "/static/js/377.2bf5b29e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee1336a7.css",
-    "static/js/main.656c3c1b.js"
+    "static/js/main.2ffb6628.js"
   ]
 }

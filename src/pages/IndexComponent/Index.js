@@ -11,6 +11,7 @@ import { SocialChatComponent } from "../../components/SocialChatComponent/Social
 import waterPacigicLogo from "../../assets/logotipo_water_pacific_1.png";
 import imepesajeLogo from "../../assets/logo.png";
 import loyaltyLogo from "../../assets/LOYALTY SLIDER 3.png";
+import ServiceWeb from "../../assets/diseno-web-para-empresas-mexico.jpg";
 
 const App = () => {
   const [modal, setModal] = useState(false);
@@ -43,11 +44,7 @@ const App = () => {
       <div onClick={() => setMenu(false)}>
         <div className="flexcolumns">
           <div className="column1">
-            <img
-              src={
-                "https://disenowebakus.net/imagenes/servicios-web/diseno-de-paginas-web/diseno-web-para-empresas-mexico.jpg"
-              }
-            />
+            <img src={ServiceWeb} />
             <h1 id="proyects"> {lang === "es" ? "Proyectos" : "Projects"}</h1>
             <Carousel itemsToShow={1}>
               {[
