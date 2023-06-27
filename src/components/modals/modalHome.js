@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Icon } from "semantic-ui-react";
 import { ModalIndex } from "./styles";
+import waterPacigicLogo from "../../assets/logotipo_water_pacific_1.png";
+import imepesajeLogo from "../../assets/logo.png";
+import loyaltyLogo from "../../assets/LOYALTY SLIDER 3.png";
 
 export const ModalHome = (props) => {
   const [visit, setVisit] = useState(3);
@@ -33,19 +36,17 @@ export const ModalHome = (props) => {
             {
               title: "Water pacific",
               url: "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/",
-              image:
-                "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/img/pics/logotipo_water_pacific_1.png",
+              image: waterPacigicLogo,
             },
             {
               title: "Imepesaje",
               url: "https://imepesaje.netlify.app/",
-              image: "https://imepesaje.netlify.app/images/logo.png",
+              image: imepesajeLogo,
             },
             {
               title: "Loyalty Advisors",
               url: "https://elated-kare-3e7ef7.netlify.app",
-              image:
-                "https://elated-kare-3e7ef7.netlify.app/assets/images/LOYALTY%20SLIDER%203.png",
+              image: loyaltyLogo,
             },
           ].map((item, index) => {
             return (
