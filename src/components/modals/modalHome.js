@@ -67,13 +67,7 @@ export const ModalHome = (props) => {
                     data-aos={"zoom-in"}
                     onMouseEnter={() => setVisit(visit)}
                     onMouseLeave={() => setVisit(3)}
-                    onClick={() =>
-                      window.open(
-                        visit === 1
-                          ? "https://diegoardilasoluciones.netlify.app/waterpacificwebsite/"
-                          : "https://imepesaje.netlify.app/"
-                      )
-                    }
+                    onClick={() => window.open(item.url)}
                   >
                     <div>
                       <Icon className="world" />
