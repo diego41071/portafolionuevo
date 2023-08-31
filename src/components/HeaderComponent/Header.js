@@ -60,9 +60,9 @@ export const HeaderComponent = (props) => {
             </a>
           </div>
         )}
-        <div className="title">
+        <div className="title" id="index">
           <h1>Diego Ardila</h1>
-          <h2 id="index">
+          <h2>
             {props.lang === "es"
               ? "Diseñador gráfico, UI/UX y desarrollador de software"
               : "Graphic designer, UI/UX and software developer"}
