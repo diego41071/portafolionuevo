@@ -90,7 +90,7 @@ export const HeaderContainer = styled.div`
         padding-bottom: 28px;
         padding-top: 21px;
         z-index: 1;
-      }
+       }
       & .navbar {
         align-items: center;
         padding: 20px 5% !important;
