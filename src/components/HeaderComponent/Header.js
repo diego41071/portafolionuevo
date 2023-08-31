@@ -47,15 +47,15 @@ export const HeaderComponent = (props) => {
         </div>
         {props.menu && (
           <div className="menu-mobile">
-            <a href="#index">{props.lang === "es" ? "Inicio" : "Start"}</a>
-            <a href="#services">
+            <a onClick={() => props.setMenu(false)} href="#index">{props.lang === "es" ? "Inicio" : "Start"}</a>
+            <a onClick={() => props.setMenu(false)} href="#services">
               {props.lang === "es" ? "Servicios" : "Services"}
             </a>
-            <a href="#proyects">
+            <a onClick={() => props.setMenu(false)} href="#proyects">
               {props.lang === "es" ? "Proyectos" : "Projects"}{" "}
             </a>
-            <a href="#who">{props.lang === "es" ? "Quién Soy" : "Who I am"}</a>
-            <a href="#footer">
+            <a onClick={() => props.setMenu(false)} href="#who">{props.lang === "es" ? "Quién Soy" : "Who I am"}</a>
+            <a onClick={() => props.setMenu(false)} href="#footer">
               {props.lang === "es" ? "Contacto" : "Contact"}{" "}
             </a>
           </div>
