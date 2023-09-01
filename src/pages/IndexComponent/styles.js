@@ -107,7 +107,7 @@ export const StyleIndex = styled.div`
 
   @media screen and (max-width: 720px) {
     & .rec-carousel {
-      width: 144%;
+      width: 120%;
     }
 
     & .visitItem {
