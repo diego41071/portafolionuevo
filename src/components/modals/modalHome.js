@@ -61,9 +61,8 @@ export const ModalHome = (props) => {
                 {item.title}
                 {visit === index && (
                   <div
-                    className={`visitItem_1 ${
-                      visit === 1 ? "left_visit2" : visit === 2 && "left_visit3"
-                    }`}
+                    className={`visitItem_1 ${visit === 1 ? "left_visit2" : visit === 2 && "left_visit3"
+                      }`}
                     data-aos={"zoom-in"}
                     onMouseEnter={() => setVisit(visit)}
                     onMouseLeave={() => setVisit(3)}

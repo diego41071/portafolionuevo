@@ -37,6 +37,7 @@ export const ModalIndex = styled.div`
         border-radius: 5px;
         padding: 30px;
         width: 25%;
+        height: 34vh;
       }
     }
 
