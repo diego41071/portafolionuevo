@@ -7,7 +7,7 @@ export const StyleSocialChat = styled.div`
     right: 0;
     cursor: pointer;
     & .icon {
-      font-size: 55px;
+      font-size: 42px;
     }
     & .margin_arrow {
       margin-bottom: 4px;

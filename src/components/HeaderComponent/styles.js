@@ -44,7 +44,7 @@ export const HeaderContainer = styled.div`
       right: 0;
       z-index: 1;
       & img {
-        width: 76px;
+        width: 36px;
       }
       & nav {
         width: 50%;
@@ -58,6 +58,9 @@ export const HeaderContainer = styled.div`
         margin: 0;
       }
       & .contentlang {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         & img {
           margin-right: 20px;
           cursor: pointer;

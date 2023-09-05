@@ -116,7 +116,7 @@ const App = () => {
                 );
               })}
             </Carousel>
-            <Button
+            <div className="all_projects">  <Button
               onClick={() => {
                 setModal(true);
               }}
@@ -124,7 +124,7 @@ const App = () => {
 
             >
               {lang === "es" ? "Ver todos los proyectos" : "See all projects"}
-            </Button>
+            </Button></div>
             {modal && (
               <ModalHome
                 setModal={setModal}

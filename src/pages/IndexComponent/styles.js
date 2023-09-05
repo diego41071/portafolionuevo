@@ -39,6 +39,12 @@ export const StyleIndex = styled.div`
     margin-bottom: 98px;
     & .column1 {
       width: 70%;
+      & .all_projects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 31px;
+      }
       & img {
         width: 100%;
       }
