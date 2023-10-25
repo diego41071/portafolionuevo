@@ -31,7 +31,7 @@ export const ModalIndex = styled.div`
       justify-content: center;
 
       & .card {
-        border: 1px solid;
+        /* border: 1px solid; */
         margin-right: 40px;
         cursor: pointer;
         border-radius: 5px;
@@ -59,9 +59,9 @@ export const ModalIndex = styled.div`
       left: 12%;
       height: 34vh;
       width: 18vw;
-      cursor: pointer;
       top: 142px;
       cursor: pointer;
+      border-radius: 10px;
       & div {
         text-align: center;
 

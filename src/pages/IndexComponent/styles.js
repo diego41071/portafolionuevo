@@ -36,10 +36,13 @@ export const StyleIndex = styled.div`
     margin: 0 auto;
     text-align: left;
     padding-top: 73px;
-    margin-bottom: 98px;
+    margin-bottom: 45px;
+    & #services {
+      margin-bottom: 30px;
+    }
     & .column1 {
       width: 70%;
-      & .all_projects{
+      & .all_projects {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -95,6 +98,13 @@ export const StyleIndex = styled.div`
     & .column2 {
       width: 30%;
       margin-left: 60px;
+      & .flexservices {
+        margin-bottom: 20px;
+        & i {
+          font-size: 43px;
+          margin-right: 20px;
+        }
+      }
     }
   }
 
