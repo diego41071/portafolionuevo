@@ -19,7 +19,7 @@ export const HeaderComponent = (props) => {
           </div>
           <img className="img-logo" src={logo} />
           <nav>
-            <a href="#index">{props.lang === "es" ? "Inicio" : "Start"}</a>
+            <a href="#index">{props.lang === "es" ? "Inicio" : "Home"}</a>
             <a href="#services">
               {props.lang === "es" ? "Servicios" : "Services"}
             </a>
@@ -48,7 +48,7 @@ export const HeaderComponent = (props) => {
         {props.menu && (
           <div className="menu-mobile">
             <a onClick={() => props.setMenu(false)} href="#index">
-              {props.lang === "es" ? "Inicio" : "Start"}
+              {props.lang === "es" ? "Inicio" : "Home"}
             </a>
             <a onClick={() => props.setMenu(false)} href="#services">
               {props.lang === "es" ? "Servicios" : "Services"}
