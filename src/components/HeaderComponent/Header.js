@@ -47,14 +47,18 @@ export const HeaderComponent = (props) => {
         </div>
         {props.menu && (
           <div className="menu-mobile">
-            <a onClick={() => props.setMenu(false)} href="#index">{props.lang === "es" ? "Inicio" : "Start"}</a>
+            <a onClick={() => props.setMenu(false)} href="#index">
+              {props.lang === "es" ? "Inicio" : "Start"}
+            </a>
             <a onClick={() => props.setMenu(false)} href="#services">
               {props.lang === "es" ? "Servicios" : "Services"}
             </a>
             <a onClick={() => props.setMenu(false)} href="#proyects">
               {props.lang === "es" ? "Proyectos" : "Projects"}{" "}
             </a>
-            <a onClick={() => props.setMenu(false)} href="#who">{props.lang === "es" ? "Quién Soy" : "Who I am"}</a>
+            <a onClick={() => props.setMenu(false)} href="#whoMobile">
+              {props.lang === "es" ? "Quién Soy" : "Who I am"}
+            </a>
             <a onClick={() => props.setMenu(false)} href="#footer">
               {props.lang === "es" ? "Contacto" : "Contact"}{" "}
             </a>
@@ -62,7 +66,7 @@ export const HeaderComponent = (props) => {
         )}
         <div className="title" id="index">
           <h1>Diego Ardila</h1>
-          <h2>
+          <h2 id="who">
             {props.lang === "es"
               ? "Diseñador gráfico, UI/UX y desarrollador de software"
               : "Graphic designer, UI/UX and software developer"}
