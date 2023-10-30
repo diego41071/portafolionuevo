@@ -17,7 +17,7 @@ export const StyleSocialChat = styled.div`
 
   @media screen and (max-width: 720px) {
     .socialchat {
-      right: 0px;
+      right: 12px;
       bottom: 13px;
       & .icon {
         font-size: 35px;
