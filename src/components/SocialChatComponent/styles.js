@@ -2,12 +2,13 @@ import styled from "styled-components";
 export const StyleSocialChat = styled.div`
   .socialchat {
     position: fixed;
-    bottom: 2px;
-    width: 105px;
-    right: 0;
+    bottom: 26px;
+    right: 22px;
     cursor: pointer;
+    display: grid;
     & .icon {
-      font-size: 42px;
+      font-size: 38px;
+      margin-top: 5px;
     }
     & .margin_arrow {
       margin-bottom: 4px;
