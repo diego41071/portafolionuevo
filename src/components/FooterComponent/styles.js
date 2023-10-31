@@ -40,7 +40,8 @@ export const FooterContainer = styled.div`
         line-height: 29px;
         margin-top: 2px;
         & .envelope {
-          margin-right: 6px;
+          margin-right: 6px !important;
+          margin-left: 0;
         }
       }
     }
