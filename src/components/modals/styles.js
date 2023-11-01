@@ -111,7 +111,7 @@ export const ModalIndex = styled.div`
       top: 90px;
       height: 364px;
       overflow-y: auto;
-      padding: 46px 46px 7px;
+      padding: 46px 37px 46px 49px;
       left: 45px;
       & h1 {
         margin-bottom: 22px;
