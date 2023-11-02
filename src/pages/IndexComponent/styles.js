@@ -32,7 +32,7 @@ export const StyleIndex = styled.div`
 
   .flexcolumns {
     display: flex;
-    width: 70%;
+    width: 84%;
     margin: 0 auto;
     text-align: left;
     padding-top: 73px;

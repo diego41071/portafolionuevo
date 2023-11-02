@@ -7,7 +7,7 @@ export const HeaderContainer = styled.div`
     flex-direction: column;
     font-size: calc(10px + 2vmin);
     color: white;
-    padding: 0px 16% 45px;
+    padding: 0px 8% 45px;
     & h1 {
       text-align: left;
       padding-top: 65px;
@@ -36,7 +36,7 @@ export const HeaderContainer = styled.div`
     & .navbar {
       display: flex;
       justify-content: space-between;
-      padding: 20px 16%;
+      padding: 20px 8%;
       position: fixed;
       background-color: #000000;
       width: 100%;
@@ -93,7 +93,7 @@ export const HeaderContainer = styled.div`
         padding-bottom: 28px;
         padding-top: 21px;
         z-index: 1;
-       }
+      }
       & .navbar {
         align-items: center;
         padding: 20px 5% !important;
