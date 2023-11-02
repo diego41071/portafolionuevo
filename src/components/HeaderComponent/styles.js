@@ -51,7 +51,7 @@ export const HeaderContainer = styled.div`
         text-align: right;
         display: flex;
         justify-content: space-around;
-        font-size: 17px;
+        font-size: 21px;
         align-items: center;
       }
       & h1 {
@@ -73,7 +73,7 @@ export const HeaderContainer = styled.div`
     }
     & h2 {
       text-align: left;
-      font-size: 22px;
+      font-size: 24px;
       margin-top: 52px;
       font-weight: bolder;
       color: lightgrey;

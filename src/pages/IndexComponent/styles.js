@@ -60,6 +60,7 @@ export const StyleIndex = styled.div`
         margin-top: 0;
         font-weight: 500;
         text-align: center;
+        font-size: 22px;
       }
       .button {
         margin-top: 8px;
@@ -100,6 +101,7 @@ export const StyleIndex = styled.div`
       margin-left: 60px;
       & .flexservices {
         margin-bottom: 20px;
+        font-size: 17px;
         & i {
           font-size: 43px;
           margin-right: 20px;

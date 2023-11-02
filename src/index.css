@@ -45,6 +45,10 @@ a {
   animation-name: slidein;
 }
 
+p{
+  font-size: 17px;
+}
+
 @keyframes slidein {
   from {
     margin-left: 70%;
