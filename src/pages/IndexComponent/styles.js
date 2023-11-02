@@ -62,6 +62,7 @@ export const StyleIndex = styled.div`
         text-align: center;
         font-size: 22px;
       }
+
       .button {
         margin-top: 8px;
       }

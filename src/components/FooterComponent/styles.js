@@ -18,7 +18,9 @@ export const FooterContainer = styled.div`
     }
     & .facebook,
     .linkedin,
-    .instagram {
+    .instagram,
+    .github,
+    .gitlab {
       cursor: pointer;
     }
     & .icon-social {

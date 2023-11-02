@@ -18,8 +18,16 @@ export const FooterComponent = () => {
               class: "facebook f",
             },
             {
-              onclick: "https://www.instagram.com/alex.gram7",
+              onclick: "https://www.instagram.com/diegoardilasoluciones",
               class: "instagram",
+            },
+            {
+              onclick: "https://github.com/diego41071",
+              class: "github",
+            },
+            {
+              onclick: "https://gitlab.com/alexander.diego.2007",
+              class: "gitlab",
             },
           ].map((item) => {
             return (
