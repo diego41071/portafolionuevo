@@ -138,7 +138,7 @@ const App = () => {
             )}
           </div>
           <div className="column2">
-            <h1> {lang === "es" ? "Quién soy" : "Who I am"} </h1>
+            <h1> {lang === "es" ? "Quién soy" : "About me"} </h1>
             <p id="services">
               {lang === "es"
                 ? "Soy un desarrollador de software con enfoque en servicios y soluciones, con experiencia en el ámbito de las tecnologías de la información y las comunicaciones. Mi principal compromiso con los clientes es conseguir que las soluciones que ofrezco tengan un impacto positivo en su organización. Ofrezco servicios a la carta atendiendo a las necesidades de cada cliente y abarcando desde los servicios tradicionales hasta las soluciones más innovadoras. Como desarrollador informático, la mejor manera de satisfacer las necesidades del cliente es conocer sus peculiaridades y requisitos y así diseñar la mejor solución posible para cada caso en particular. Ofrecer servicios informáticos de calidad es nuestra meta, dispongo de los productos líderes de cada segmento, así como los fabricantes y proveedores de referencia. Porque nuestro éxito se basa en la confianza que brindan los clientes."

@@ -23,7 +23,7 @@ export const HeaderComponent = (props) => {
             <a href="#services">
               {props.lang === "es" ? "Servicios" : "Services"}
             </a>
-            <a href="#who">{props.lang === "es" ? "Quién Soy" : "Who I am"}</a>
+            <a href="#who">{props.lang === "es" ? "Quién Soy" : "About me"}</a>
             <a href="#proyects">
               {props.lang === "es" ? "Proyectos" : "Projects"}
             </a>
@@ -55,7 +55,7 @@ export const HeaderComponent = (props) => {
               {props.lang === "es" ? "Proyectos" : "Projects"}{" "}
             </a>
             <a onClick={() => props.setMenu(false)} href="#whoMobile">
-              {props.lang === "es" ? "Quién Soy" : "Who I am"}
+              {props.lang === "es" ? "Quién Soy" : "About me"}
             </a>
             <a onClick={() => props.setMenu(false)} href="#footer">
               {props.lang === "es" ? "Contacto" : "Contact"}{" "}
