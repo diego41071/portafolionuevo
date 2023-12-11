@@ -13,6 +13,7 @@ import imepesajeLogo from "../../assets/logo.png";
 import loyaltyLogo from "../../assets/LOYALTY SLIDER 3.png";
 import ServiceWeb from "../../assets/diseno-web-para-empresas-mexico.jpg";
 import MbfLogo from "../../assets/logo-circulo-600x600.png"
+import MedibasculasLogo from "../../assets/Logo-Meibasculas-en-fondo-trasnparente-en-png-967x1024.png"
 
 const App = () => {
   const [modal, setModal] = useState(false);
@@ -83,7 +84,15 @@ const App = () => {
                       ? "Es una empresa colombiana familiar fundada por los ingenieros Eduardo Enrique Blanco Ùsuga y Daniela Medrano David, los cuales tuvieron la visión de entregar servicios técnicos de calidad a microempresarios que no tenían la capacidad para tener un departamento de ingeniería en sus negocios, actualmente, somos proveedores de soluciones industriales, a micro y grandes empresas del sector alimenticio de Colombia."
                       : "It is a Colombian family company founded by engineers Eduardo Enrique Blanco Ùsuga and Daniela Medrano David, who had the vision of delivering quality technical services to microentrepreneurs who did not have the capacity to have an engineering department in their businesses. Currently, we are suppliers. . of industrial solutions, to micro and large companies in the Colombian food sector.",
                   image: MbfLogo,
-                  url: "https://elated-kare-3e7ef7.netlify.app",
+                  url: "https://www.mbf.com.co/",
+                },  {
+                  title: "Medibásculas",
+                  text:
+                    lang === "es"
+                      ? "Soluciones de pesaje y maquinaria para procesar alimentos. Servicio técnico experto garantizado."
+                      : "Weighing solutions and food processing machinery. Guaranteed expert technical service.",
+                  image: MedibasculasLogo,
+                  url: "https://medibasculas.com/",
                 },
               ].map((item, index) => {
                 return (
@@ -120,7 +129,7 @@ const App = () => {
                       onMouseLeave={() => setVisit(false)}
                       onClick={() => window.open(item.url, "_blank")}
                       id="whoMobile"
-                      style={{width:index===3&&"195px"}}
+                      style={{width:(index===3||index===4)&&"195px"}}
                     />
                   </div>
                 );
