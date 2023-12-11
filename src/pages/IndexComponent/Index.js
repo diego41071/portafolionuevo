@@ -12,6 +12,7 @@ import waterPacigicLogo from "../../assets/logotipo_water_pacific_1.png";
 import imepesajeLogo from "../../assets/logo.png";
 import loyaltyLogo from "../../assets/LOYALTY SLIDER 3.png";
 import ServiceWeb from "../../assets/diseno-web-para-empresas-mexico.jpg";
+import MbfLogo from "../../assets/logo-circulo-600x600.png"
 
 const App = () => {
   const [modal, setModal] = useState(false);
@@ -75,6 +76,14 @@ const App = () => {
                       : "Loyalty Property Advisors is on a mission to transform the Colombian real estate market by bringing anyone access to unique property investment opportunities through direct engagement and full transparency. As legal professionals, we were constantly confronted with the lack of support for buyers in the real estate acquisition processes in Colombia. With the country’s growing economy, we want to ensure that new investors come into a welcoming and secure investment environment by accompanying them at every step of the journey.",
                   image: loyaltyLogo,
                   url: "https://elated-kare-3e7ef7.netlify.app",
+                },  {
+                  title: "MBF",
+                  text:
+                    lang === "es"
+                      ? "Es una empresa colombiana familiar fundada por los ingenieros Eduardo Enrique Blanco Ùsuga y Daniela Medrano David, los cuales tuvieron la visión de entregar servicios técnicos de calidad a microempresarios que no tenían la capacidad para tener un departamento de ingeniería en sus negocios, actualmente, somos proveedores de soluciones industriales, a micro y grandes empresas del sector alimenticio de Colombia."
+                      : "It is a Colombian family company founded by engineers Eduardo Enrique Blanco Ùsuga and Daniela Medrano David, who had the vision of delivering quality technical services to microentrepreneurs who did not have the capacity to have an engineering department in their businesses. Currently, we are suppliers. . of industrial solutions, to micro and large companies in the Colombian food sector.",
+                  image: MbfLogo,
+                  url: "https://elated-kare-3e7ef7.netlify.app",
                 },
               ].map((item, index) => {
                 return (
@@ -111,6 +120,7 @@ const App = () => {
                       onMouseLeave={() => setVisit(false)}
                       onClick={() => window.open(item.url, "_blank")}
                       id="whoMobile"
+                      style={{width:index===3&&"195px"}}
                     />
                   </div>
                 );
