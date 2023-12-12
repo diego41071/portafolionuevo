@@ -4,6 +4,8 @@ import { ModalIndex } from "./styles";
 import waterPacigicLogo from "../../assets/logotipo_water_pacific_1.png";
 import imepesajeLogo from "../../assets/logo.png";
 import loyaltyLogo from "../../assets/LOYALTY SLIDER 3.png";
+import MbfLogo from "../../assets/logo-circulo-600x600.png"
+import MedibasculasLogo from "../../assets/Logo-Meibasculas-en-fondo-trasnparente-en-png-967x1024.png"
 
 export const ModalHome = (props) => {
   const [visit, setVisit] = useState(3);
@@ -48,6 +50,16 @@ export const ModalHome = (props) => {
               url: "https://elated-kare-3e7ef7.netlify.app",
               image: loyaltyLogo,
             },
+            {
+              title: "MBF",
+              url: "https://www.mbf.com.co/",
+              image: MbfLogo,
+            },
+            {
+              title: "Medibásculas",
+              url: "https://medibasculas.com/",
+              image: MedibasculasLogo,
+            },
           ].map((item, index) => {
             return (
               <div
@@ -55,17 +67,17 @@ export const ModalHome = (props) => {
                 key={index}
                 onClick={() => window.open(item.url, "_blank")}
                 onMouseEnter={() => setVisit(index)}
-                onMouseLeave={() => setVisit(3)}
+                onMouseLeave={() => setVisit(5)}
               >
                 <img src={item.image} />
                 {item.title}
                 {visit === index && (
                   <div
-                    className={`visitItem_1 ${visit === 1 ? "left_visit2" : visit === 2 && "left_visit3"
+                    className={`visitItem_1 ${visit === 1 ? "left_visit2" : visit === 2 ? "left_visit3" : visit === 3 ? "left_visit4" : visit === 4 && "left_visit5"
                       }`}
                     data-aos={"zoom-in"}
                     onMouseEnter={() => setVisit(visit)}
-                    onMouseLeave={() => setVisit(3)}
+                    onMouseLeave={() => setVisit(5)}
                     onClick={() => window.open(item.url)}
                   >
                     <div>

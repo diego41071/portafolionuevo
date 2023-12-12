@@ -42,11 +42,17 @@ export const ModalIndex = styled.div`
     }
 
     & .left_visit2 {
-      left: 39% !important;
+      left: 23% !important;
     }
 
     & .left_visit3 {
-      left: 65% !important;
+      left: 41% !important;
+    } 
+    & .left_visit4 {
+      left: 59% !important;
+    }    
+    & .left_visit5 {
+      left: 77% !important;
     }
 
     & .visitItem_1 {
@@ -56,9 +62,9 @@ export const ModalIndex = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      left: 12%;
+      left: 5%;
       height: 34vh;
-      width: 18vw;
+      width: 14vw;
       top: 142px;
       cursor: pointer;
       border-radius: 10px;
