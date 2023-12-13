@@ -117,10 +117,10 @@ export const ModalIndex = styled.div`
       top: 169px;
       height: 364px;
       overflow-y: auto;
-      padding: 46px 46px 7px;
+      padding: 46px 46px 50px;
       left: 45px;
       & h1 {
-        margin-bottom: 22px;
+        margin-bottom: 0px;
         margin-top: 0px;
         text-align: center;
         margin-left: 40px;
@@ -133,6 +133,10 @@ export const ModalIndex = styled.div`
           width: 100%;
           margin-bottom: 0;
           height: 27vh;
+        }
+
+        & img{
+          width: 123px;
         }
       }
 
