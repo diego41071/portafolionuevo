@@ -131,7 +131,8 @@ export const ModalIndex = styled.div`
         & .card {
           margin-right: auto;
           width: 100%;
-          margin-bottom: 34px;
+          margin-bottom: 0;
+          height: 27vh;
         }
       }
 
