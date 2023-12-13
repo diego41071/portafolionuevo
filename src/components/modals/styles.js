@@ -114,7 +114,7 @@ export const ModalIndex = styled.div`
 
   @media screen and (max-width: 720px) {
     .modal {
-      top: 90px;
+      top: 169px;
       height: 364px;
       overflow-y: auto;
       padding: 46px 46px 7px;
