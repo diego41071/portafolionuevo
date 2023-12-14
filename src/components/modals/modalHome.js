@@ -70,7 +70,7 @@ export const ModalHome = (props) => {
                 onMouseLeave={() => setVisit(5)}
               >
                 <img src={item.image} />
-                {item.title}
+                <p>{item.title}</p>
                 {visit === index && (
                   <div
                     className={`visitItem_1 ${visit === 1 ? "left_visit2" : visit === 2 ? "left_visit3" : visit === 3 ? "left_visit4" : visit === 4 && "left_visit5"

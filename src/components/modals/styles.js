@@ -31,28 +31,30 @@ export const ModalIndex = styled.div`
       justify-content: center;
 
       & .card {
-        /* border: 1px solid; */
         margin-right: 40px;
         cursor: pointer;
         border-radius: 5px;
         padding: 30px;
         width: 25%;
         height: 34vh;
+        & img{
+          width: 94px;
+        }
       }
     }
 
     & .left_visit2 {
-      left: 23% !important;
+      left: 21% !important;
     }
 
     & .left_visit3 {
-      left: 41% !important;
+      left: 40% !important;
     } 
     & .left_visit4 {
       left: 59% !important;
     }    
     & .left_visit5 {
-      left: 77% !important;
+      left: 79% !important;
     }
 
     & .visitItem_1 {
@@ -62,7 +64,7 @@ export const ModalIndex = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      left: 5%;
+      left: 2%;
       height: 34vh;
       width: 14vw;
       top: 142px;
@@ -132,7 +134,7 @@ export const ModalIndex = styled.div`
           margin-right: auto;
           width: 100%;
           margin-bottom: 0;
-          height: 27vh;
+          height: 21vh;
         }
 
         & img{
