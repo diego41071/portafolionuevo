@@ -77,7 +77,7 @@ const App = () => {
                       : "Loyalty Property Advisors is on a mission to transform the Colombian real estate market by bringing anyone access to unique property investment opportunities through direct engagement and full transparency. As legal professionals, we were constantly confronted with the lack of support for buyers in the real estate acquisition processes in Colombia. With the country’s growing economy, we want to ensure that new investors come into a welcoming and secure investment environment by accompanying them at every step of the journey.",
                   image: loyaltyLogo,
                   url: "https://elated-kare-3e7ef7.netlify.app",
-                },  {
+                }, {
                   title: "MBF",
                   text:
                     lang === "es"
@@ -85,7 +85,7 @@ const App = () => {
                       : "It is a Colombian family company founded by engineers Eduardo Enrique Blanco Ùsuga and Daniela Medrano David, who had the vision of delivering quality technical services to microentrepreneurs who did not have the capacity to have an engineering department in their businesses. Currently, we are suppliers. . of industrial solutions, to micro and large companies in the Colombian food sector.",
                   image: MbfLogo,
                   url: "https://www.mbf.com.co/",
-                },  {
+                }, {
                   title: "Medibásculas",
                   text:
                     lang === "es"
@@ -129,7 +129,7 @@ const App = () => {
                       onMouseLeave={() => setVisit(false)}
                       onClick={() => window.open(item.url, "_blank")}
                       id="whoMobile"
-                      style={{width:(index===3||index===4)&&"195px"}}
+                      style={{ width: (index === 3 || index === 4) && "195px" }}
                     />
                   </div>
                 );
@@ -160,8 +160,8 @@ const App = () => {
             <h1> {lang === "es" ? "Quién soy" : "About me"} </h1>
             <p>
               {lang === "es"
-                ? "Soy un desarrollador de software con enfoque en servicios y soluciones, con experiencia en el ámbito de las tecnologías de la información y las comunicaciones. Mi principal compromiso con los clientes es conseguir que las soluciones que ofrezco tengan un impacto positivo en su organización. Ofrezco servicios a la carta atendiendo a las necesidades de cada cliente y abarcando desde los servicios tradicionales hasta las soluciones más innovadoras. Como desarrollador informático, la mejor manera de satisfacer las necesidades del cliente es conocer sus peculiaridades y requisitos y así diseñar la mejor solución posible para cada caso en particular. Ofrecer servicios informáticos de calidad es nuestra meta, dispongo de los productos líderes de cada segmento, así como los fabricantes y proveedores de referencia. Porque nuestro éxito se basa en la confianza que brindan los clientes."
-                : "I am a software developer with a focus on services and solutions, with experience in the field of information and communication technologies. My main commitment to clients is to ensure that the solutions I offer have a positive impact on their organization. I offer à la carte services meeting the needs of each client and ranging from traditional services to the most innovative solutions. As a computer developer, the best way to satisfy the client's needs is to know their peculiarities and requirements and thus design the best possible solution for each particular case. Offering quality computer services is our goal, I have the leading products in each segment, as well as the reference manufacturers and suppliers. Because our success is based on the trust that our customers provide."}
+                ? "Soy un desarrollador de software con enfoque en servicios y soluciones, con experiencia en el ámbito de las tecnologías de la información y las comunicaciones. Mi principal compromiso con los clientes es conseguir que las soluciones que ofrezco tengan un impacto positivo en su organización."
+                : "I am a software developer with a focus on services and solutions, with experience in the field of information and communications technologies. My main commitment to clients is to ensure that the solutions I offer have a positive impact on their organization."}
             </p>
             <h1 id="services">{lang === "es" ? "Servicios" : "Services"}</h1>
             {[
