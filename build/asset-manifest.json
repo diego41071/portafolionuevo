@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.24479855.css",
-    "main.js": "/static/js/main.03cb9109.js",
+    "main.js": "/static/js/main.cf1839e4.js",
     "static/js/377.2bf5b29e.chunk.js": "/static/js/377.2bf5b29e.chunk.js",
     "static/media/LOYALTY SLIDER 3.png": "/static/media/LOYALTY SLIDER 3.91e4335920a0aeadd44b.png",
     "static/media/Logo-Meibasculas-en-fondo-trasnparente-en-png-967x1024.png": "/static/media/Logo-Meibasculas-en-fondo-trasnparente-en-png-967x1024.c22775ea63f72af06f0b.png",
@@ -30,11 +30,11 @@
     "static/media/american-flag-1311743-180_sm.webp": "/static/media/american-flag-1311743-180_sm.4ee7fa5d2995b4526921.webp",
     "index.html": "/index.html",
     "main.24479855.css.map": "/static/css/main.24479855.css.map",
-    "main.03cb9109.js.map": "/static/js/main.03cb9109.js.map",
+    "main.cf1839e4.js.map": "/static/js/main.cf1839e4.js.map",
     "377.2bf5b29e.chunk.js.map": "/static/js/377.2bf5b29e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24479855.css",
-    "static/js/main.03cb9109.js"
+    "static/js/main.cf1839e4.js"
   ]
 }
