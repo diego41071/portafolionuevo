@@ -81,8 +81,8 @@ const App = () => {
                   title: "MBF",
                   text:
                     lang === "es"
-                      ? "Es una empresa colombiana familiar fundada por los ingenieros Eduardo Enrique Blanco Ùsuga y Daniela Medrano David, los cuales tuvieron la visión de entregar servicios técnicos de calidad a microempresarios que no tenían la capacidad para tener un departamento de ingeniería en sus negocios, actualmente, somos proveedores de soluciones industriales, a micro y grandes empresas del sector alimenticio de Colombia."
-                      : "It is a Colombian family company founded by engineers Eduardo Enrique Blanco Ùsuga and Daniela Medrano David, who had the vision of delivering quality technical services to microentrepreneurs who did not have the capacity to have an engineering department in their businesses. Currently, we are suppliers. . of industrial solutions, to micro and large companies in the Colombian food sector.",
+                      ? "Es una empresa colombiana familiar, actualmente somos proveedores de soluciones industriales, a micro y grandes empresas del sector alimenticio de Colombia."
+                      : "It is a Colombian family company, we are currently providers of industrial solutions to micro and large companies in the Colombian food sector.",
                   image: MbfLogo,
                   url: "https://www.mbf.com.co/",
                 }, {
