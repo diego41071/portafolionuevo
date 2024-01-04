@@ -55,8 +55,8 @@ const App = () => {
                   title: "Water Pacific",
                   text:
                     lang === "es"
-                      ? " El invento ha sido probado en el departamento colombiano de Antioquia, más concretamente en el Valle de Aburrá y, produce 35 litros de agua al día. Water Pacific Se trata de un ingenioso invento que puede suponer una buena solución para el desabastecimiento de agua en algunas zonas, ya que, la humedad relativa en el aire existe hasta en los lugares más áridos del planeta"
-                      : "The invention has been tested in the Colombian department of Antioquia, more specifically in the Aburrá Valley, and produces 35 liters of water per day. Water Pacific This is an ingenious invention that can be a good solution for the shortage of water in some areas, since the relative humidity in the air exists even in the most arid places on the planet",
+                      ? "Water Pacific se trata de un ingenioso invento que puede suponer una buena solución para el desabastecimiento de agua en algunas zonas, ya que, la humedad relativa en el aire existe hasta en los lugares más áridos del planeta."
+                      : "Water Pacific this is an ingenious invention that can be a good solution for water shortages in some areas, since the relative humidity in the air exists even in the most arid places on the planet.",
                   image: waterPacigicLogo,
                   url: "https://diegoardilasoluciones.netlify.app/waterpacificwebsite",
                 },
