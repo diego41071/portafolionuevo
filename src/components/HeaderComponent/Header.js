@@ -17,7 +17,7 @@ export const HeaderComponent = (props) => {
               <Icon className="bars" onClick={() => props.setMenu(true)}></Icon>
             )}
           </div>
-          <img className="img-logo" src={logo} />
+          <img className="img-logo" src={logo} alt="logo" />
           <nav>
             <a href="#index">{props.lang === "es" ? "Inicio" : "Home"}</a>
             <a href="#services">

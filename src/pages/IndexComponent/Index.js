@@ -47,7 +47,7 @@ const App = () => {
       <div onClick={() => setMenu(false)}>
         <div className="flexcolumns">
           <div className="column1">
-            <img src={ServiceWeb} id="proyects" />
+            <img src={ServiceWeb} id="proyects" alt="proyectos" />
             <h1> {lang === "es" ? "Proyectos" : "Projects"}</h1>
             <Carousel itemsToShow={1}>
               {[
