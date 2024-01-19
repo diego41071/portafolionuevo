@@ -8,12 +8,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Carousel from "react-elastic-carousel";
 import { SocialChatComponent } from "../../components/SocialChatComponent/SocialChat";
-import waterPacigicLogo from "../../assets/logotipo_water_pacific_1.png";
-import imepesajeLogo from "../../assets/logo.png";
-import loyaltyLogo from "../../assets/LOYALTY SLIDER 3.png";
-import ServiceWeb from "../../assets/diseno-web-para-empresas-mexico.jpg";
-import MbfLogo from "../../assets/logo-circulo-600x600.png"
-import MedibasculasLogo from "../../assets/Logo-Meibasculas-en-fondo-trasnparente-en-png-967x1024.png"
+import waterPacigicLogo from "../../assets/logotipo_water_pacific_1.webp";
+import imepesajeLogo from "../../assets/logo.webp";
+import loyaltyLogo from "../../assets/LOYALTY SLIDER 3.webp";
+import ServiceWeb from "../../assets/diseno-web-para-empresas-mexico.webp";
+import MbfLogo from "../../assets/logo-circulo-600x600.webp"
+import MedibasculasLogo from "../../assets/Logo-Meibasculas-en-fondo-trasnparente-en-png-967x1024.webp"
 
 const App = () => {
   const [modal, setModal] = useState(false);
