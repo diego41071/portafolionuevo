@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Icon } from "semantic-ui-react";
 import { HeaderContainer } from "./styles";
-import logo from "../../assets/diego_ardila_fondo_transparente.png";
+import logo from "../../assets/diego_ardila_fondo_transparente.webp";
 import flag1 from "../../assets/american-flag-1311743-180_sm.webp";
 import flag2 from "../../assets/Bandera_de_España.svg.webp";
 
