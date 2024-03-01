@@ -12,6 +12,7 @@ import waterPacigicLogo from "../../assets/logotipo_water_pacific_1.webp";
 import imepesajeLogo from "../../assets/logo.webp";
 import loyaltyLogo from "../../assets/LOYALTY SLIDER 3.webp";
 import ServiceWeb from "../../assets/diseno-web-para-empresas-mexico.webp";
+import ServiceWebMobile from "../../assets/img-mobile/diseno-web-para-empresas-mexico.webp";
 import MbfLogo from "../../assets/logo-circulo-600x600.webp"
 import MedibasculasLogo from "../../assets/Logo-Meibasculas-en-fondo-trasnparente-en-png-967x1024.webp"
 
@@ -48,6 +49,7 @@ const App = () => {
         <div className="flexcolumns">
           <div className="column1">
             <img src={ServiceWeb} id="proyects" alt="proyectos" />
+            <img src={ServiceWebMobile} id="proyects" className="proyectsMobile"  alt="proyectos"></img>
             <h1> {lang === "es" ? "Proyectos" : "Projects"}</h1>
             <Carousel itemsToShow={1}>
               {[
