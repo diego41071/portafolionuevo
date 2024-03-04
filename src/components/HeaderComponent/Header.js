@@ -51,7 +51,7 @@ export const HeaderComponent = (props) => {
             <a onClick={() => props.setMenu(false)} href="#services">
               {props.lang === "es" ? "Servicios" : "Services"}
             </a>
-            <a onClick={() => props.setMenu(false)} href="#proyects">
+            <a onClick={() => props.setMenu(false)} href="#proyectsMobile">
               {props.lang === "es" ? "Proyectos" : "Projects"}{" "}
             </a>
             <a onClick={() => props.setMenu(false)} href="#whoMobile">

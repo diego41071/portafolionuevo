@@ -49,7 +49,7 @@ const App = () => {
         <div className="flexcolumns">
           <div className="column1">
             <img src={ServiceWeb} id="proyects" alt="proyectos" />
-            <img src={ServiceWebMobile} id="proyects" className="proyectsMobile"  alt="proyectos"></img>
+            <img src={ServiceWebMobile} id="proyectsMobile" className="proyectsMobile"  alt="proyectos"></img>
             <h1> {lang === "es" ? "Proyectos" : "Projects"}</h1>
             <Carousel itemsToShow={1}>
               {[
