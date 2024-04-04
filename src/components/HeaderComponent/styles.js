@@ -45,6 +45,7 @@ export const HeaderContainer = styled.div`
       z-index: 1;
       & img {
         width: 36px;
+        height:36px;
       }
       & nav {
         width: 50%;
