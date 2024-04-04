@@ -45,8 +45,7 @@ export const HeaderContainer = styled.div`
       z-index: 1;
       & img {
         width: 36px;
-        height:36px;
-      }
+       }
       & nav {
         width: 50%;
         text-align: right;
@@ -68,8 +67,7 @@ export const HeaderContainer = styled.div`
         }
       }
       & .img-logo {
-        /* position: relative;
-        top: 9px; */
+           height: 36px;
       }
     }
     & h2 {
