@@ -49,7 +49,7 @@ const App = () => {
         <div className="flexcolumns">
           <div className="column1">
             <img src={ServiceWeb} id="proyects" alt="proyectos" />
-            <img src={ServiceWebMobile} id="proyectsMobile" className="proyectsMobile"  alt="proyectos"></img>
+            <img src={ServiceWebMobile} id="proyectsMobile" className="proyectsMobile" alt="proyectos"></img>
             <h1> {lang === "es" ? "Proyectos" : "Projects"}</h1>
             <Carousel itemsToShow={1}>
               {[
@@ -202,6 +202,10 @@ const App = () => {
                 </div>
               );
             })}
+            <h1>{lang === "es" ? "Tecnologías" : "Technologies"}</h1>
+            <div className="flextechnologies"> {["node", "react", "angular"].map(item => {
+              return <Icon className={item}></Icon>
+            })}</div>
           </div>
         </div>
         <SocialChatComponent offset={offset} />

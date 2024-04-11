@@ -102,6 +102,14 @@ export const StyleIndex = styled.div`
     & .column2 {
       width: 30%;
       margin-left: 60px;
+      & i{
+        font-size: 43px;
+      }
+      & .flextechnologies{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+      }
       & .flexservices {
         margin-bottom: 20px;
         font-size: 17px;
