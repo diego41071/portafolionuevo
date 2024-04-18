@@ -109,6 +109,9 @@ export const StyleIndex = styled.div`
         display: flex;
         justify-content: space-between;
         margin-top: 35px;
+        & .alignicons{
+          text-align: center;
+        }
       }
       & .flexservices {
         margin-bottom: 20px;
