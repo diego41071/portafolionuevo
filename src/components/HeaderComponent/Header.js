@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Icon } from "semantic-ui-react";
 import { HeaderContainer } from "./styles";
-import logo from "../../assets/diego_ardila.webp";
+import logo from "../../assets/diego_ardila_fondo_transparente.webp";
 import flag1 from "../../assets/american-flag-1311743-180_sm.webp";
 import flag2 from "../../assets/Bandera_de_España.svg.webp";
 
@@ -51,7 +51,7 @@ export const HeaderComponent = (props) => {
             <a onClick={() => props.setMenu(false)} href="#services">
               {props.lang === "es" ? "Servicios" : "Services"}
             </a>
-            <a onClick={() => props.setMenu(false)} href="#proyects">
+            <a onClick={() => props.setMenu(false)} href="#proyectsMobile">
               {props.lang === "es" ? "Proyectos" : "Projects"}{" "}
             </a>
             <a onClick={() => props.setMenu(false)} href="#whoMobile">

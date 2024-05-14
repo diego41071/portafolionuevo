@@ -37,6 +37,8 @@ export const StyleIndex = styled.div`
     text-align: left;
     padding-top: 73px;
     margin-bottom: 45px;
+    .proyectsMobile{display:none;
+        }
     & #services {
       margin-bottom: 30px;
     }
@@ -100,6 +102,17 @@ export const StyleIndex = styled.div`
     & .column2 {
       width: 30%;
       margin-left: 60px;
+      & i{
+        font-size: 43px;
+      }
+      & .flextechnologies{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        & .alignicons{
+          text-align: center;
+        }
+      }
       & .flexservices {
         margin-bottom: 20px;
         font-size: 17px;
@@ -125,6 +138,9 @@ export const StyleIndex = styled.div`
   }
 
   @media screen and (max-width: 720px) {
+    .proyectsMobile{
+      display: block !important;
+    }
     & .rec-carousel {
       width: 107%;
     }
@@ -147,11 +163,10 @@ export const StyleIndex = styled.div`
     }
     & .flexcolumns {
       display: block;
-    }
-    & .img-proyects {
-      width: 217px !important;
-    }
-    & .column1,
+      #proyects{
+        display:none;
+      }
+      & .column1,
     .column2 {
       & .button {
         margin-top: 20px !important;
@@ -161,6 +176,11 @@ export const StyleIndex = styled.div`
       width: 100% !important;
       margin-left: auto !important;
     }
+    }
+    & .img-proyects {
+      width: 217px !important;
+    }
+    
 
     h1 {
       text-align: center;
