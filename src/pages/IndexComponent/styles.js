@@ -106,9 +106,11 @@ export const StyleIndex = styled.div`
         font-size: 43px;
       }
       & .flextechnologies{
-        display: flex;
         justify-content: space-between;
         margin-top: 35px;
+        display: grid;
+        grid-template-rows: 123px 123px 123px;
+        grid-template-columns: 123px 123px 123px;
         & .alignicons{
           text-align: center;
         }

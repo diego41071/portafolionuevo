@@ -203,7 +203,7 @@ const App = () => {
               );
             })}
             <h1>{lang === "es" ? "Tecnologías" : "Technologies"}</h1>
-            <div className="flextechnologies"> {[{ icon: "node", name: "Node js" }, { icon: "react", name: "React js" }, { icon: "angular", name: "Angular" }].map(item => {
+            <div className="flextechnologies"> {[{ icon: "node", name: "Node js" }, { icon: "react", name: "React js" }, { icon: "angular", name: "Angular" }, { icon: "wordpress", name: "Wordpress" }].map(item => {
               return <div className="alignicons"> <Icon className={item.icon}></Icon><p>{item.name}</p> </div>
             })}</div>
           </div>
