@@ -170,6 +170,10 @@ export const StyleIndex = styled.div`
       }
       & .column1,
     .column2 {
+      .flextechnologies{
+        grid-template-rows: 150px 150px;
+        grid-template-columns: 150px 150px;     
+      }
       & .button {
         margin-top: 20px !important;
         display: block;
