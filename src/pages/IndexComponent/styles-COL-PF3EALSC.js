@@ -107,8 +107,8 @@ export const StyleIndex = styled.div`
       }
       & .flextechnologies{
         display: grid;
-        grid-template-rows: 200px 200px 200px;
-        grid-template-columns: 130px 130px 130px;
+        grid-template-rows: 200px 200px 0;
+        grid-template-columns: 130px 130px 0;
         margin-top: 35px;
         & .alignicons{
           text-align: center;

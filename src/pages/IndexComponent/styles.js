@@ -33,10 +33,10 @@ export const StyleIndex = styled.div`
   .flexcolumns {
     display: flex;
     width: 84%;
-    margin: 0 auto;
+    margin: 0 auto 0;
     text-align: left;
     padding-top: 73px;
-    margin-bottom: 45px;
+    padding-bottom: 45px;
     .proyectsMobile{display:none;
         }
     & #services {
@@ -109,8 +109,8 @@ export const StyleIndex = styled.div`
         justify-content: space-between;
         margin-top: 35px;
         display: grid;
-        grid-template-rows: 123px 123px 123px;
-        grid-template-columns: 123px 123px 123px;
+        grid-template-rows: 123px 123px 0;
+        grid-template-columns: 123px 123px 0;
         & .alignicons{
           text-align: center;
         }
