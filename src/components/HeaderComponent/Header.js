@@ -57,6 +57,9 @@ export const HeaderComponent = (props) => {
             <a onClick={() => props.setMenu(false)} href="#whoMobile">
               {props.lang === "es" ? "Quién Soy" : "About me"}
             </a>
+            <a onClick={() => props.setMenu(false)} href="#technologies">
+              {props.lang === "es" ? "Tecnologías" : "Technologies"}
+            </a>
             <a onClick={() => props.setMenu(false)} href="#footer">
               {props.lang === "es" ? "Contacto" : "Contact"}{" "}
             </a>
