@@ -51,7 +51,7 @@ export const HeaderContainer = styled.div`
         text-align: right;
         display: flex;
         justify-content: space-around;
-        font-size: 21px;
+        font-size: 16px;
         align-items: center;
       }
       & h1 {
