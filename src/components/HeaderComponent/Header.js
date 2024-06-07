@@ -20,12 +20,12 @@ export const HeaderComponent = (props) => {
           <img className="img-logo" src={logo} alt="logo" />
           <nav>
             <a href="#index">{props.lang === "es" ? "Inicio" : "Home"}</a>
-            <a href="#services">
-              {props.lang === "es" ? "Servicios" : "Services"}
-            </a>
-            <a href="#who">{props.lang === "es" ? "Quién Soy" : "About me"}</a>
             <a href="#proyects">
               {props.lang === "es" ? "Proyectos" : "Projects"}
+            </a>
+            <a href="#who">{props.lang === "es" ? "Quién Soy" : "About me"}</a>
+            <a href="#services">
+              {props.lang === "es" ? "Servicios" : "Services"}
             </a>
             <a href="#technologies">
               {props.lang === "es" ? "Tecnologías" : "Technologies"}
