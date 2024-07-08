@@ -19,18 +19,12 @@ export const HeaderComponent = (props) => {
           </div>
           <img className="img-logo" src={logo} alt="logo" />
           <nav>
-            <a href="#index">{props.lang === "es" ? "Inicio" : "Home"}</a>
-            <a href="#proyects">
-              {props.lang === "es" ? "Proyectos" : "Projects"}
-            </a>
-            <a href="#who">{props.lang === "es" ? "Quién Soy" : "About me"}</a>
-            <a href="#services">
-              {props.lang === "es" ? "Servicios" : "Services"}
-            </a>
-            <a href="#technologies">
-              {props.lang === "es" ? "Tecnologías" : "Technologies"}
-            </a>
-            <a href="#footer">{props.lang === "es" ? "Contacto" : "Contact"}</a>
+            {[{ href: "#index", text: props.lang === "es" ? "Inicio" : "Home" },
+            { href: "#proyects", text: props.lang === "es" ? "Proyectos" : "Projects" },
+            { href: "#who", text: props.lang === "es" ? "Quién Soy" : "About me" },
+            { href: "#services", text: props.lang === "es" ? "Servicios" : "Services" },
+            { href: "#technologies", text: props.lang === "es" ? "Tecnologías" : "Technologies" },
+            { href: "#footer", text: props.lang === "es" ? "Contacto" : "Contact" }].map(item => { return <a href={item.href}>{item.text}</a> })}
           </nav>
           <div className="contentlang">
             <img
