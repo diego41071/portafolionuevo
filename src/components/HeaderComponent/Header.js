@@ -42,24 +42,15 @@ export const HeaderComponent = (props) => {
         </div>
         {props.menu && (
           <div className="menu-mobile">
-            <a onClick={() => props.setMenu(false)} href="#index">
-              {props.lang === "es" ? "Inicio" : "Home"}
-            </a>
-            <a onClick={() => props.setMenu(false)} href="#proyectsMobile">
-              {props.lang === "es" ? "Proyectos" : "Projects"}{" "}
-            </a>
-            <a onClick={() => props.setMenu(false)} href="#whoMobile">
-              {props.lang === "es" ? "Quién Soy" : "About me"}
-            </a>
-            <a onClick={() => props.setMenu(false)} href="#services">
-              {props.lang === "es" ? "Servicios" : "Services"}
-            </a>
-            <a onClick={() => props.setMenu(false)} href="#technologies">
-              {props.lang === "es" ? "Tecnologías" : "Technologies"}
-            </a>
-            <a onClick={() => props.setMenu(false)} href="#footer">
-              {props.lang === "es" ? "Contacto" : "Contact"}{" "}
-            </a>
+            {[{ text: props.lang === "es" ? "Inicio" : "Home", href: "#index" },
+            { text: props.lang === "es" ? "Proyectos" : "Projects", href: "#proyectsMobile" },
+            { text: props.lang === "es" ? "Quién Soy" : "About me", href: "#whoMobile" },
+            { text: props.lang === "es" ? "Servicios" : "Services", href: "#services" },
+            { text: props.lang === "es" ? "Tecnologías" : "Technologies", href: "#technologies" },
+            { text: props.lang === "es" ? "Contacto" : "Contact", href: "footer" }].map(item => {
+              return <a href={item.href}
+                onClick={() => props.setMenu(false)}>{item.text}</a>
+            })}
           </div>
         )}
         <div className="title" id="index">
