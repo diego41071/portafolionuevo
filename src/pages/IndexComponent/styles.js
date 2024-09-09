@@ -100,7 +100,7 @@ export const StyleIndex = styled.div`
       }
     }
     & .column2 {
-      width: 30%;
+      width: 60%;
       margin-left: 60px;
       & i{
         font-size: 43px;

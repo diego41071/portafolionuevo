@@ -1,6 +1,5 @@
 import React, { useState } from "react"
-import ServiceWeb from "../../assets/diseno-web-para-empresas-mexico.webp";
-import ServiceWebMobile from "../../assets/img-mobile/diseno-web-para-empresas-mexico.webp";
+
 import Carousel from "react-elastic-carousel";
 import waterPacigicLogo from "../../assets/logotipo_water_pacific_1.webp";
 import imepesajeLogo from "../../assets/logo.webp";
@@ -17,8 +16,7 @@ export const Projects = (props) => {
     const [menu, setMenu] = useState(false);
     return (
         <div className="column1">
-            <img src={ServiceWeb} id="proyects" alt="proyectos" />
-            <img src={ServiceWebMobile} id="proyectsMobile" className="proyectsMobile" alt="proyectos"></img>
+
             <h1> {props.lang === "es" ? "Proyectos" : "Projects"}</h1>
             <Carousel itemsToShow={1}>
                 {[

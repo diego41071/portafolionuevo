@@ -2,7 +2,6 @@ import { StyleIndex } from "./styles";
 import React, { useState, useEffect } from "react";
 import { FooterComponent } from "../../components/FooterComponent/Footer";
 import { HeaderComponent } from "../../components/HeaderComponent/Header";
-import { Button, Icon } from "semantic-ui-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { SocialChatComponent } from "../../components/SocialChatComponent/SocialChat";
@@ -10,6 +9,8 @@ import { Projects } from "../../components/ProjectsComponent/Projects";
 import { AboutMe } from "../../components/AboutMeComponent/AboutMe";
 import { Services } from "../../components/ServicesComponent/Services";
 import { Technologies } from "../../components/TechnologiesComponent/Technologies";
+import ServiceWeb from "../../assets/diseno-web-para-empresas-mexico.webp";
+import ServiceWebMobile from "../../assets/img-mobile/diseno-web-para-empresas-mexico.webp";
 
 const App = () => {
   const [lang, setLang] = useState("en");
@@ -40,10 +41,13 @@ const App = () => {
       />
       <div onClick={() => setMenu(false)}>
         <div className="flexcolumns">
-          <Projects lang={lang} setLang={setLang} />
+          <div>
+            <img src={ServiceWeb} id="proyects" alt="proyectos" />
+            <img src={ServiceWebMobile} id="proyectsMobile" className="proyectsMobile" alt="proyectos"></img>
+            <Services lang={lang} setLang={setLang} />
+            <Projects lang={lang} setLang={setLang} /></div>
           <div className="column2">
             <AboutMe lang={lang} setLang={setLang} />
-            <Services lang={lang} setLang={setLang} />
             <Technologies lang={lang} />
           </div>
         </div>
