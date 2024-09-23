@@ -35,15 +35,21 @@ export const StyleIndex = styled.div`
     width: 84%;
     margin: 0 auto 0;
     text-align: left;
-    padding-top: 73px;
-    padding-bottom: 45px;
-    .proyectsMobile{display:none;
-        }
+    padding-top: 37px;
+    padding-bottom: 37px;
+    .proyectsMobile {
+      display: none;
+    }
+
+    #proyects {
+      margin-top: 52px;
+    }
+
     & #services {
       margin-bottom: 30px;
     }
     & .column1 {
-      width: 70%;
+      margin-top: 28px;
       & .all_projects {
         display: flex;
         justify-content: center;
@@ -75,6 +81,7 @@ export const StyleIndex = styled.div`
           cursor: pointer;
         }
       }
+
       & .visitItem {
         background-color: #0808089e;
         color: white;
@@ -102,16 +109,16 @@ export const StyleIndex = styled.div`
     & .column2 {
       width: 60%;
       margin-left: 60px;
-      & i{
+      & i {
         font-size: 43px;
       }
-      & .flextechnologies{
+      & .flextechnologies {
         justify-content: space-between;
         margin-top: 35px;
         display: grid;
-        grid-template-rows: 123px 123px 0;
-        grid-template-columns: 123px 123px 0;
-        & .alignicons{
+        grid-template-rows: 123px 123px 123px;
+        grid-template-columns: 123px 123px 123px;
+        & .alignicons {
           text-align: center;
         }
       }
@@ -140,7 +147,7 @@ export const StyleIndex = styled.div`
   }
 
   @media screen and (max-width: 720px) {
-    .proyectsMobile{
+    .proyectsMobile {
       display: block !important;
     }
     & .rec-carousel {
@@ -165,28 +172,27 @@ export const StyleIndex = styled.div`
     }
     & .flexcolumns {
       display: block;
-      #proyects{
-        display:none;
+      #proyects {
+        display: none;
       }
       & .column1,
-    .column2 {
-      .flextechnologies{
-        grid-template-rows: 150px 150px;
-        grid-template-columns: 150px 150px;     
+      .column2 {
+        .flextechnologies {
+          grid-template-rows: 150px 150px;
+          grid-template-columns: 150px 150px;
+        }
+        & .button {
+          margin-top: 20px !important;
+          display: block;
+          margin: 21px auto;
+        }
+        width: 100% !important;
+        margin-left: auto !important;
       }
-      & .button {
-        margin-top: 20px !important;
-        display: block;
-        margin: 21px auto;
-      }
-      width: 100% !important;
-      margin-left: auto !important;
-    }
     }
     & .img-proyects {
       width: 217px !important;
     }
-    
 
     h1 {
       text-align: center;

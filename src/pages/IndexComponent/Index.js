@@ -42,10 +42,16 @@ const App = () => {
       <div onClick={() => setMenu(false)}>
         <div className="flexcolumns">
           <div>
-            <img src={ServiceWeb} id="proyects" alt="proyectos" />
-            <img src={ServiceWebMobile} id="proyectsMobile" className="proyectsMobile" alt="proyectos"></img>
+            <img
+              src={ServiceWebMobile}
+              id="proyectsMobile"
+              className="proyectsMobile"
+              alt="proyectos"
+            ></img>
             <Services lang={lang} setLang={setLang} />
-            <Projects lang={lang} setLang={setLang} /></div>
+            <img src={ServiceWeb} id="proyects" alt="proyectos" />
+            <Projects lang={lang} setLang={setLang} />
+          </div>
           <div className="column2">
             <AboutMe lang={lang} setLang={setLang} />
             <Technologies lang={lang} />
