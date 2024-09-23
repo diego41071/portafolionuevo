@@ -125,6 +125,8 @@ export const StyleIndex = styled.div`
       & .flexservices {
         margin-bottom: 20px;
         font-size: 17px;
+        display: flex;
+        justify-content: space-around;
         & i {
           font-size: 43px;
           margin-right: 20px;

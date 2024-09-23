@@ -6,10 +6,7 @@ export const Services = (props) => {
   return (
     <ServicesContainer>
       <h1 id="services">{props.lang === "es" ? "Servicios" : "Services"}</h1>
-      <div
-        className="flexservices"
-        style={{ display: "flex", justifyContent: "space-around" }}
-      >
+      <div className="flexservices">
         {[
           {
             icon: "globe",
