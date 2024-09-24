@@ -149,6 +149,10 @@ export const StyleIndex = styled.div`
   }
 
   @media screen and (max-width: 720px) {
+    #services {
+      margin-bottom: 13px;
+      margin-top: 24px;
+    }
     .proyectsMobile {
       display: block !important;
     }

@@ -12,4 +12,17 @@ export const ServicesContainer = styled.div`
   .flexservices {
     display: flex;
   }
+
+  @media (min-width: 400px) and (max-width: 500px) {
+    .flexservices {
+      display: grid;
+      gap: 1px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .align_icons {
+    text-align: center;
+    margin-top: 34px;
+    margin-right: 45px;
+  }
 `;
