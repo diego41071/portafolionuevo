@@ -8,4 +8,8 @@ export const ServicesContainer = styled.div`
       margin-bottom: 17px;
     }
   }
+
+  .flexservices {
+    display: flex;
+  }
 `;
