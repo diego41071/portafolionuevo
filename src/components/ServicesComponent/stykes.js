@@ -23,6 +23,6 @@ export const ServicesContainer = styled.div`
   .align_icons {
     text-align: center;
     margin-top: 34px;
-    margin-right: 45px;
+    margin-right: 40px;
   }
 `;
