@@ -46,7 +46,7 @@ export const StyleIndex = styled.div`
     }
 
     & #services {
-      margin-bottom: 30px;
+      margin-bottom: -4px;
     }
     & .column1 {
       margin-top: 28px;
