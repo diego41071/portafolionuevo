@@ -155,6 +155,7 @@ export const StyleIndex = styled.div`
     }
     .proyectsMobile {
       display: block !important;
+      width: 100%;
     }
     & .rec-carousel {
       width: 107%;
